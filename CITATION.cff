@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its measurements, please cite it as below."
+title: "FinVerity: Continuously Verifiable Financial Audit Evidence on PureChain (PoA²) — simulation framework and measurements"
+authors:
+  - family-names: Ibrahim
+    given-names: Hamza
+repository-code: "https://github.com/hamzalabwork-sudo/FinVerity-PureChain"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-02
+keywords:
+  - blockchain
+  - audit evidence
+  - proof of authority
+  - PureChain
+  - financial auditing
+  - reproducibility

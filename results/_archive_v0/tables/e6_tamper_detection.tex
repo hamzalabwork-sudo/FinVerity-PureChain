@@ -1,0 +1,22 @@
+\begin{tabular}{llrrlll}
+\toprule
+kind & modification & cases & detected & rate\_pct & ci95\_lo\_pct & ci95\_hi\_pct \\
+\midrule
+benign & reserialize\_reorder & 300 & 0 & 0.00 & 0.00 & 1.22 \\
+benign & unicode\_nfd & 300 & 0 & 0.00 & 0.00 & 1.22 \\
+control & none & 300 & 0 & 0.00 & 0.00 & 1.22 \\
+malicious & amount & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & authorization & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & beneficiary & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & date & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & document\_deleted & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & invoice\_number & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & ledger\_entry & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & record\_substitution & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & single\_bit\_metadata & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & supporting\_document & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & vendor & 300 & 300 & 100.00 & 98.78 & 100.00 \\
+malicious & ALL (TDR) & 3300 & 3300 & 100.00 & 99.89 & 100.00 \\
+benign & ALL (FPR) & 600 & 0 & 0.00 & 0.00 & 0.61 \\
+\bottomrule
+\end{tabular}

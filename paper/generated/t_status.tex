@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Campaign completion status (completed / planned trials) at the time this report was generated. PureChain (live) trials are pending the recovery of the public RPC endpoint.}
+\label{tab:status}
+\begin{tabular}{llccccc}
+\toprule
+ID & Experiment & PureChain (live) & PoA\textsuperscript{2} emulation & Besu QBFT & PostgreSQL & Ethereum PoS \\
+\midrule
+E1 & Controlled workloads W1--W5 & 0/58 & 58/58 & 58/58 & 58/58 & 7/7 \\
+E2 & Offered-load sweep & 0/35 & 35/35 & 35/35 & 35/35 & 4/4 \\
+E3 & Evidence-size sweep & 0/25 & 25/25 & 25/25 & 25/25 &  \\
+E4 & Evidence-complexity sweep & 0/20 & 20/20 & 20/20 & 20/20 &  \\
+E5 & Validator-count sweep &  & 30/30 & 24/30 &  &  \\
+E6 & Tamper detection & 4/9 & 9/9 &  &  &  \\
+E7 & Cross-dataset replication & 0/36 & 36/36 & 36/36 & 36/36 &  \\
+E8 & Insider tampering & 0/7 & 7/7 & 7/7 & 7/7 & 2/2 \\
+E9 & Batched Merkle commitments & 0/50 & 50/50 & 50/50 & 50/50 & 4/4 \\
+\bottomrule
+\end{tabular}
+\end{table}

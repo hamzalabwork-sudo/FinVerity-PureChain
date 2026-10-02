@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Validator-count sweep (E5); every validator is limited to 1 CPU. Besu QBFT with 10 validators lost liveness in 3 of 4 trials (BFT event-queue overflow).}
+\label{tab:e5}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrcccccr}
+\toprule
+Validators @ offered & Infrastructure & $n$ & Success (\%) & Throughput (rec/s) & Incl. P50 (s) & Incl. P95 (s) & Final P50 (s) & J/record & \textmu USD/record \\
+\midrule
+v10 @ 50 & Besu QBFT & 3 & 4.0 & 3.34 [0.00, 17.74] & 14.12 & 31.79 & 14.12 & 24.987 & 536.70 \\
+v10 @ 50 & PoA\textsuperscript{2} emulation & 5 & 100.0 & 48.20 [47.25, 49.15] & 1.58 [1.57, 1.59] & 2.21 [1.95, 2.47] & 7.57 [7.55, 7.58] & 5.201 & 52.10 \\
+v10 @ 200 & PoA\textsuperscript{2} emulation & 5 & 100.0 & 174.64 [170.51, 178.76] & 2.03 [1.79, 2.27] & 2.66 [2.34, 2.98] & 7.89 [7.70, 8.08] & 1.441 & 51.77 \\
+v10 (confirm) @ 50 & Besu QBFT & 1 & 100.0 & 22.53 & 32.61 & 46.99 & 32.61 & 11.119 & 53.01 \\
+v4 @ 50 & Besu QBFT & 5 & 100.0 & 46.33 [41.08, 51.57] & 3.92 [0.00, 11.15] & 7.12 [0.00, 21.58] & 3.92 [0.00, 11.15] & 2.189 & 35.93 \\
+v4 @ 50 & PoA\textsuperscript{2} emulation & 5 & 100.0 & 48.22 [47.22, 49.23] & 1.56 [1.55, 1.57] & 2.00 [2.00, 2.01] & 7.56 [7.55, 7.57] & 2.085 & 35.97 \\
+v4 @ 200 & Besu QBFT & 5 & 100.0 & 60.34 [57.82, 62.85] & 22.62 [20.72, 24.51] & 36.69 [34.22, 39.17] & 22.62 [20.72, 24.51] & 1.673 & 36.31 \\
+v4 @ 200 & PoA\textsuperscript{2} emulation & 5 & 100.0 & 176.63 [175.08, 178.19] & 1.79 [1.68, 1.90] & 2.30 [2.17, 2.42] & 7.74 [7.64, 7.84] & 0.574 & 35.76 \\
+v7 @ 50 & Besu QBFT & 5 & 100.0 & 44.88 [38.06, 51.70] & 6.70 [0.00, 18.44] & 11.68 [0.00, 32.35] & 6.70 [0.00, 18.44] & 3.970 & 44.04 \\
+v7 @ 50 & PoA\textsuperscript{2} emulation & 5 & 100.0 & 48.10 [47.18, 49.02] & 1.56 [1.52, 1.59] & 2.04 [2.03, 2.06] & 7.55 [7.52, 7.59] & 3.651 & 44.03 \\
+v7 @ 200 & Besu QBFT & 5 & 100.0 & 54.31 [51.92, 56.70] & 24.82 [23.89, 25.75] & 41.60 [39.40, 43.81] & 24.82 [23.89, 25.75] & 3.241 & 44.46 \\
+v7 @ 200 & PoA\textsuperscript{2} emulation & 5 & 100.0 & 175.46 [171.04, 179.88] & 1.93 [1.75, 2.10] & 2.52 [2.33, 2.72] & 7.87 [7.71, 8.04] & 1.007 & 43.77 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Tamper detection against on-chain commitments (E6). Malicious rows report the detection rate (TDR); benign rows report the false-positive rate (FPR). Exact Clopper--Pearson 95\% intervals. Pooled over PureChain (live): 4 runs; PoA\textsuperscript{2} emulation: 9 runs.}
+\label{tab:tamper}
+\begin{tabular}{llrrrc}
+\toprule
+Kind & Modification & Cases & Flagged & Rate (\%) & 95\% CI \\
+\midrule
+benign & reserialize\_reorder & 13,000 & 0 & 0.00 & [0.000, 0.028] \\
+benign & unicode\_nfd & 13,000 & 0 & 0.00 & [0.000, 0.028] \\
+control & none & 13,000 & 0 & 0.00 & [0.000, 0.028] \\
+malicious & amount & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & authorization & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & beneficiary & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & date & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & document\_deleted & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & invoice\_number & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & ledger\_entry & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & record\_substitution & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & single\_bit\_metadata & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & supporting\_document & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & vendor & 13,000 & 13,000 & 100.00 & [99.972, 100.000] \\
+malicious & ALL (TDR) & 143,000 & 143,000 & 100.00 & [99.997, 100.000] \\
+benign & ALL (FPR) & 26,000 & 0 & 0.00 & [0.000, 0.014] \\
+\bottomrule
+\end{tabular}
+\end{table}

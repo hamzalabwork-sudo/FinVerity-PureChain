@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Privileged-insider tampering (E8): share of attacks prevented (write rejected) or detected by the audit, with Clopper--Pearson 95\% intervals.}
+\label{tab:insider}
+\begin{tabular}{llrrrrc}
+\toprule
+Attack & Infrastructure & Cases & Prevented & Detected & Undetected & Protected (\%) \\
+\midrule
+S1 alter evidence & PoA\textsuperscript{2} emulation & 700 & 0 & 700 & 0 & 100.0 [99.5, 100.0] \\
+S1 alter evidence & Besu QBFT & 700 & 0 & 700 & 0 & 100.0 [99.5, 100.0] \\
+S1 alter evidence & PostgreSQL & 700 & 0 & 700 & 0 & 100.0 [99.5, 100.0] \\
+S1 alter evidence & Ethereum PoS & 200 & 0 & 200 & 0 & 100.0 [98.2, 100.0] \\
+S2 alter evidence + rewrite commitment & PoA\textsuperscript{2} emulation & 700 & 700 & 0 & 0 & 100.0 [99.5, 100.0] \\
+S2 alter evidence + rewrite commitment & Besu QBFT & 700 & 700 & 0 & 0 & 100.0 [99.5, 100.0] \\
+S2 alter evidence + rewrite commitment & PostgreSQL & 700 & 0 & 0 & 700 & 0.0 [0.0, 0.5] \\
+S2 alter evidence + rewrite commitment & Ethereum PoS & 200 & 200 & 0 & 0 & 100.0 [98.2, 100.0] \\
+S3 fabricate + backdate record & PoA\textsuperscript{2} emulation & 700 & 0 & 700 & 0 & 100.0 [99.5, 100.0] \\
+S3 fabricate + backdate record & Besu QBFT & 700 & 0 & 700 & 0 & 100.0 [99.5, 100.0] \\
+S3 fabricate + backdate record & PostgreSQL & 700 & 0 & 0 & 700 & 0.0 [0.0, 0.5] \\
+S3 fabricate + backdate record & Ethereum PoS & 200 & 0 & 200 & 0 & 100.0 [98.2, 100.0] \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Calibration of the PoA\textsuperscript{2} emulation against live PureChain (identical workload: 300 MoMTSim records, 10\,KB evidence, 50 records/s Poisson arrivals).}
+\label{tab:calibration}
+\begin{tabular}{lrrr}
+\toprule
+Metric & Live PureChain & PoA\textsuperscript{2} emulation & Deviation \\
+\midrule
+Records committed & 300 & 300 & +0.0\% \\
+Throughput (records/s) & 36.7 & 40.0 & +8.9\% \\
+Inclusion latency, median (s) & 2.24 & 1.49 & -33.2\% \\
+Inclusion latency, P95 (s) & 3.22 & 1.96 & -39.2\% \\
+1-confirmation latency, median (s) & 3.07 & 2.48 & -19.2\% \\
+3-confirmation latency, median (s) & 4.29 & 4.48 & +4.4\% \\
+6-confirmation latency, median (s) & 7.19 & 7.47 & +3.8\% \\
+Transactions per non-empty block, mean & 42.9 & 42.9 & +0.0\% \\
+Distinct block signers & 4 & 4 & +0.0\% \\
+Gas per record & 153,317 & 153,434 & +0.1\% \\
+Verification success (\%) & 100.0 & 100.0 &  \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Live inclusion latency additionally contains the wide-area round trip and the public load balancer.
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Measurements on the live PureChain network (4 validators) before the public RPC became unavailable (E6 runs, 1{,}000 records each, 100\,KB evidence, 50 records/s offered).}
+\label{tab:live}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Dataset & Committed & rec/s & Incl. P50 (s) & 3-conf P50 (s) & tx/block & Reorged & Depth & Verified (\%) \\
+\midrule
+momtsim & 1,000 & 36.4 & 4.30 & 10.75 & 66.7 & 2 & 1 & 100.0 \\
+momtsim & 1,000 & 41.2 & 5.14 & 12.64 & 90.9 & 7 & 3 & 100.0 \\
+momtsim & 1,000 & 27.4 & 10.37 & 20.70 & 76.9 & 5 & 3 & 100.0 \\
+saml\_d & 1,000 & 34.7 & 6.86 & 13.92 & 83.3 & 5 & 3 & 100.0 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip\footnotesize Submitted through the load-balanced endpoint; nonce splitting across two RPC nodes inflates latency (see Section~\ref{sec:validity}).
+\end{table}

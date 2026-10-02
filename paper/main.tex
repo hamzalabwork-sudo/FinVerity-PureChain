@@ -1,0 +1,407 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\captionsetup{font=small,labelfont=bf}
+\setlist{nosep,leftmargin=*}
+
+\input{generated/macros}
+\newcommand{\poa}{PoA\textsuperscript{2}}
+\newcommand{\figif}[3]{\IfFileExists{figures/#1.pdf}{%
+  \begin{figure}[t]\centering\includegraphics[width=#2]{figures/#1.pdf}\caption{#3}\label{fig:#1}\end{figure}}{}}
+
+\title{FinVerity on PureChain: Experimental Setup and Results\\[2pt]
+\large Blockchain-anchored, continuously verifiable financial audit evidence}
+\author{}
+\date{Generated from the complete measurement campaign (\Trials{} trials)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent This report documents the experimental methodology and the measured results for FinVerity, an audit-evidence
+architecture that commits SHA-256 digests of canonicalised financial evidence packages to the PureChain
+\poa{} blockchain while the evidence itself remains off-chain. Four transaction-recording infrastructures are
+compared under identical workloads derived from public synthetic financial transaction datasets: a centralised
+database (PostgreSQL), a conventional permissioned blockchain (Hyperledger Besu QBFT), a conventional public-chain
+configuration (Ethereum proof-of-stake with mainnet timing) and PureChain, measured both on the live network and on a
+\poa{} emulation calibrated to it. The evaluation covers performance (latency, finality, throughput), efficiency
+(energy, cost, resources) and auditability (verification, tamper detection, insider resistance), and every core
+experiment is replicated on three independent transaction datasets (MoMTSim, SAML-D, IBM AML). All tables and
+figures are generated directly from the raw measurements; Table~\ref{tab:status} states which experiments are
+complete.
+\end{abstract}
+
+% =====================================================================================
+\section{Experimental Setup}\label{sec:setup}
+
+\subsection{Research design}
+The experiments address the question whether a lightweight, zero-gas, \poa-based permissioned blockchain can provide
+cryptographically verifiable financial audit evidence while reducing transaction latency, energy consumption and
+operational cost. Equivalent workloads are executed on every infrastructure and three groups of metrics are
+collected: \emph{performance} (latency, finality, throughput), \emph{efficiency} (energy, cost, CPU, memory, network,
+storage) and \emph{auditability} (verification success, evidence--transaction binding, tamper detection, insider
+resistance).
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Evaluation framework: metric groups and their operationalisation.}\label{tab:metrics}
+\begin{tabular}{p{2.1cm}p{4.3cm}p{8.6cm}}
+\toprule
+Group & Metric & Operationalisation \\
+\midrule
+Performance & Throughput (TPS) & committed records / (last inclusion $-$ first arrival) \\
+ & Transaction latency & arrival $\rightarrow$ first observation of the canonical block containing the record \\
+ & Finality latency & arrival $\rightarrow$ finality under the rule of Table~\ref{tab:infra} \\
+ & Confirmation time & arrival $\rightarrow$ observation of block $b+k$, $k\in\{1,2,3,6\}$ \\
+\midrule
+Efficiency & Energy per transaction (J/tx) & attributed node energy and measured dynamic CPU energy per record \\
+ & CPU utilisation & CPU-seconds of client and infrastructure containers per second of processing \\
+ & Memory utilisation & peak resident memory of infrastructure containers \\
+ & Network I/O & request and response bytes per record \\
+ & Storage overhead & on-chain bytes per record; off-chain evidence bytes per record \\
+ & Operational cost per transaction & $C_{\mathit{compute}}+C_{\mathit{storage}}+C_{\mathit{network}}+C_{\mathit{fee}}$ \\
+\midrule
+Auditability & Evidence verification time & record lookup + evidence retrieval + re-hash, per record \\
+ & Verification success rate & share of committed records with $H_i'=H_i$ \\
+ & Tamper detection rate & TDR over eleven modification classes; FPR over benign transformations \\
+ & Evidence--transaction binding & identifier, commitment and approver all match \\
+ & Insider resistance & attacks by a privileged operator prevented or detected \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Infrastructures under test}\label{sec:infra}
+\begin{table}[H]
+\centering\scriptsize
+\caption{Infrastructures compared. All blockchain configurations run the same Solidity contract
+(\texttt{FinVerityRegistry}, solc 0.8.19, EVM target \emph{paris}).}\label{tab:infra}
+\begin{tabular}{p{2.6cm}p{3.5cm}p{3.1cm}p{2.4cm}p{3.3cm}}
+\toprule
+Configuration & Consensus / engine & Nodes & Finality rule & Fees \\
+\midrule
+PureChain (live) & \poa{} (Geth 1.13.15 fork, Clique-style seals) & \LiveValidators{} validators (remote, public RPC) & \FinalityDepth{} confirmations$^{a}$ & gas price 0 \\
+\poa{} emulation & Clique PoA, Geth 1.13.15, 1\,s period & 4 signers (Docker, 1 CPU each) & \FinalityDepth{} confirmations$^{a}$ & fee-free (1\,wei nominal)$^{b}$ \\
+Besu QBFT & QBFT BFT, Besu 24.12.2, 1\,s period & 4 validators (Docker, 1 CPU each) & immediate (inclusion) & gas price 0 \\
+Ethereum PoS & Casper FFG + LMD-GHOST; Geth 1.13.15 + Prysm 5.0.4 & 1 node, 64 validators & finalized checkpoint & EIP-1559$^{c}$ \\
+PostgreSQL 16 & single operator, \texttt{fsync=on}, synchronous commit & 1 server (Docker) & durable commit & none \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize
+$^{a}$Forks up to depth \LiveMaxReorg{} were observed on live PureChain (Section~\ref{sec:live});
+$k=\FinalityDepth$ is the smallest depth exceeding every observed reorganisation. $^{b}$Upstream Geth enforces a 1\,wei floor for transactions relayed between
+peers; the cost is economically zero ($\approx1.5\times10^{-13}$\,ETH per record) and no fee is charged in the cost
+model. $^{c}$Fees are expressed at a mainnet reference price of 5\,gwei and 3{,}000\,USD/ETH.
+\end{table}
+
+Every blockchain configuration uses a 30\,M block gas limit. Besu and the \poa{} emulation give every validator the
+same 1-CPU quota, so that validator-count scaling is not confounded by contention on the single test host. The
+Ethereum PoS configuration uses mainnet timing (12\,s slots, 32 slots per epoch) and represents the
+\emph{conventional public-chain configuration} named in the hypothesis. Only the backend under test runs during a
+trial; all other local networks are stopped.
+
+\subsection{Testbed}
+Client and local infrastructure run on one workstation: Intel Core i5-12400F (6 cores, 12 threads, 65\,W base
+power), 32\,GB RAM, Windows 11, Docker Desktop 29.4 (12 CPUs, 16.7\,GB assigned). Software: Python 3.13,
+\texttt{web3.py} 6.20.4, \texttt{purechainlib} 2.1.7, PostgreSQL 16, Hyperledger Besu 24.12.2, Geth 1.13.15,
+Prysm 5.0.4. Live PureChain is reached over the public RPC endpoint (chain ID 900520900520, median RPC round trip
+\LiveRTT\,ms). The measured network parameters of PureChain (\LiveValidators{} validators sealing round-robin,
+\LiveInTurn\% of blocks sealed in turn, \LiveGasLimit{} block gas limit, gas price 0) were obtained by recovering the
+signer of each block from its Clique-style seal.
+
+\subsection{Financial transaction workloads}
+The datasets are used strictly as \emph{financial transaction workloads}; fraud and laundering labels are discarded.
+\begin{table}[H]
+\centering\scriptsize
+\caption{Transaction workload datasets.}\label{tab:data}
+\begin{tabular}{p{4.3cm}rllr}
+\toprule
+Dataset & Transactions & Period & Main types & Median amount \\
+\midrule
+MoMTSim (primary; Azamuke et al., 2024) & 4{,}225{,}958 & 8 simulated days & transfer, payment & 596.69 \\
+SAML-D (Oztas et al., 2023) & 9{,}504{,}852 & Oct 2022--Aug 2023 & card, cheque, ACH & 6{,}113.72 \\
+IBM AML HI-Small (Altman et al., 2023) & 5{,}078{,}345 & Sep 2022 & cheque, card, ACH & 1{,}414.54 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent Using three datasets with different transaction mixes, currencies, amount distributions and account
+structures tests whether the results depend on the workload source. MoMTSim drives all experiments; the core
+workloads W1, W2 and W5, the tamper-detection experiment and the insider experiment are replicated on SAML-D and IBM
+AML (E6--E8). All datasets are mapped to a common schema (identifier, timestamp, type, amount as a decimal string,
+currency, originator, beneficiary, balances, channel). MoMTSim provides neither identifiers nor wall-clock times; both
+are derived deterministically from the row index and the simulated hour. Each trial draws a contiguous chronological
+window at a seeded random offset, which preserves temporal ordering and account interactions.
+
+\subsection{Evidence generation and cryptographic commitment}
+For every transaction $T_i$ a synthetic audit-evidence package $E_i=\{M_i,D_i,A_i,L_i,C_i\}$ is generated
+deterministically: metadata $M_i$; invoice and purchase-order record $D_i$ with supporting documents; authorisation
+record $A_i$ (approval tier by amount, approver, segregation of duties); balanced double-entry journal $L_i$; and
+context $C_i$. Complexity levels are L1 (metadata), L2 (+invoice), L3 (+authorisation) and L4 (complete).
+Supporting documents are incompressible byte streams of controlled size (0, 10\,KB, 100\,KB, 1\,MB, 5\,MB), each
+represented in the package by its SHA-256 digest. The commitment is
+\begin{equation}
+E_i^{*}=\operatorname{Canon}(E_i),\qquad H_i=\mathrm{SHA256}(E_i^{*}),
+\end{equation}
+where $\operatorname{Canon}$ is an RFC~8785 profile (sorted keys, no insignificant whitespace, UTF-8, Unicode NFC,
+monetary values as decimal strings, floats rejected). An approver signs (EIP-191) the domain-bound digest
+\begin{equation}
+S_i=\operatorname{Sign}_{\mathit{approver}}\bigl(\mathrm{keccak}(\mathit{chainId}\,\|\,\mathit{registry}\,\|\,ID_i\,\|\,H_i\,\|\,\mathit{metaHash}\,\|\,\mathit{level})\bigr).
+\end{equation}
+The contract accepts \texttt{recordEvidence} only from registered submitters with a valid approver signature, rejects
+duplicate identifiers and stores $\{H_i,\mathit{metaHash},\mathit{submitter},\mathit{approver},t_i,\mathit{block}\}$.
+In batched mode (\texttt{recordBatch}) $k$ records are committed as one Merkle root over leaves
+$\mathrm{keccak}(ID_i\,\|\,H_i)$; each record keeps an inclusion proof, verifiable off-chain or with the
+contract's \texttt{verifyInclusion}. The evidence is kept off-chain in a durable store (SQLite, WAL,
+\texttt{synchronous=FULL}).
+
+\subsection{Submission and measurement}
+Records arrive as an open-loop Poisson process at the offered rate. Transactions are signed in advance and submitted
+by 16 submitter accounts in parallel over persistent keep-alive connections. A batch closes when it holds $k$ records
+or its first record has waited 1\,s. A fork-aware block watcher polls the chain head every 50\,ms (250\,ms for PoS),
+records every block version with its first-observation time and walks back along parent hashes, so replaced blocks
+are captured. Final transaction status is taken from receipts re-read against the canonical chain. Latencies are
+measured per record from its arrival:
+\begin{itemize}
+\item \emph{inclusion latency}: arrival to first observation of the canonical block containing the record;
+\item \emph{$k$-confirmation latency}: arrival to observation of block $b+k$;
+\item \emph{finality latency}: arrival to finality under the rule of Table~\ref{tab:infra};
+\item \emph{throughput}: committed records divided by the time from the first arrival to the last inclusion.
+\end{itemize}
+
+\subsection{Efficiency metrics}
+Energy is reported in two ways for every backend. The \emph{attributed} energy
+$E_{\mathit{tx}}=\bigl(n_{\mathit{nodes}}\,P_{\mathit{node}}\,T_{\mathit{proc}}+E_{\mathit{client}}\bigr)/N$
+charges every infrastructure node ($P_{\mathit{node}}=25$\,W, $n_{\mathit{nodes}}=4$ for blockchains, 1 for the
+database) for the processing window $T_{\mathit{proc}}$ from the first arrival to the last inclusion, so waiting for
+finality is not charged. The \emph{measured dynamic} energy converts CPU time of the client and of the local containers
+into energy with a linear power model $E=P_{\mathit{dyn}}\cdot t_{\mathit{CPU}}/n_{\mathit{cores}}$ (Fan et al., 2007;
+$P_{\mathit{dyn}}=65$\,W, 12 threads). Cost is
+$C_{\mathit{tx}}=C_{\mathit{compute}}+C_{\mathit{storage}}+C_{\mathit{network}}+C_{\mathit{fee}}$, with 0.12\,USD/kWh,
+0.023\,USD/GB-month off-chain storage, 0.08\,USD/GB-month on-chain storage per replica, 0.09\,USD/GB network traffic
+and an 84-month retention period. $C_{\mathit{fee}}$ is non-zero only for the fee-bearing public-chain configuration.
+
+\subsection{Auditability metrics}
+The auditor retrieves $H_i$ (or the batch root and proof), recomputes $H_i'=\mathrm{SHA256}(\operatorname{Canon}(E_i'))$
+after re-hashing every stored document, and sets $\operatorname{Verify}(E_i')=1$ iff $H_i'=H_i$. Binding success also
+requires the identifier and the recorded approver to match the package. The tamper detection rate is
+\begin{equation}
+\mathrm{TDR}=\frac{\text{detected modifications}}{\text{applicable modifications}}\times100,
+\end{equation}
+over eleven malicious modification classes (amount, date, invoice number, vendor, authorisation, supporting document,
+deleted document, ledger entry, beneficiary, single-bit change, record substitution). Two benign transformations
+(re-serialisation with reordered keys, Unicode NFD) give the false-positive rate. The insider experiment assumes an
+operator holding submitter and approver credentials who (S1) alters evidence only, (S2) alters evidence and overwrites
+the stored commitment, or (S3) fabricates and backdates a replacement record.
+
+\subsection{Experimental design}
+\begin{table}[H]
+\centering\scriptsize
+\caption{Experiments (all use evidence level L4 unless varied).}\label{tab:design}
+\begin{tabular}{llp{9.3cm}}
+\toprule
+ID & Factor & Configuration \\
+\midrule
+E1 & workload & W1 1k/10\,KB ($n$=30), W2 10k/10\,KB (10), W3 50k/100\,KB (5), W4 100k/100\,KB (3), W5 10k/1\,MB (10); 50 rec/s \\
+E2 & offered load & 10, 25, 50, 100, 200, 400 rec/s and unthrottled; 5 trials \\
+E3 & evidence size & none, 10\,KB, 100\,KB, 1\,MB, 5\,MB; 1{,}000 records; 5 trials \\
+E4 & complexity & L1--L4; 1{,}000 records, 100\,KB; 5 trials \\
+E5 & validators & 4, 7, 10 (Besu and \poa{} emulation) at 50 and 200 rec/s; 5 trials \\
+E6 & tamper detection & 1{,}000 records per dataset, 13 transformations per record; 3 trials per dataset \\
+E7 & dataset & W1 ($n$=10), W2 (5) and W5 (3) replicated on SAML-D and IBM AML \\
+E8 & insider & 300 records, 100 attacked per scenario; 3 trials (MoMTSim), 2 per secondary dataset \\
+E9 & batch size & $k\in\{1,10,25,50,100\}$ at 50 and 200 rec/s; 5 trials \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Statistical analysis}
+Each configuration is repeated in independent trials with different seeded workload windows. Trial-level results are
+reported as mean with a 95\% $t$-interval; latency distributions as median, P95 and P99. Backends are compared with
+Welch's $t$-test and the Mann--Whitney $U$ test with Holm--Bonferroni correction and Cliff's $\delta$ as effect size.
+Detection rates are reported with exact Clopper--Pearson intervals.
+
+\subsection{\poa{} emulation and its calibration}\label{sec:emulation}
+The public PureChain RPC endpoint stopped producing blocks during the campaign (Section~\ref{sec:validity}). To
+complete the controlled experiments, a \poa{} emulation was built from the parameters measured on the live network and
+validated against a live run with an identical workload (Table~\ref{tab:calibration}). Block packing and
+confirmation-depth latency agree closely; inclusion is faster on the emulation because the wide-area path and the
+public load balancer are absent. The emulation did not reproduce the forks seen on the live network under heavy load;
+applying the same \FinalityDepth-confirmation rule to both keeps the emulated finality latency conservative. Results
+from the emulation are labelled as such throughout.
+\input{generated/t_calibration}
+
+% =====================================================================================
+\section{Results}\label{sec:results}
+\input{generated/t_status}
+
+\subsection{Live PureChain characterisation}\label{sec:live}
+Block seals recovered from the live chain show \LiveValidators{} authorised validators sealing in round-robin, with
+in-turn (difficulty 2) and out-of-turn (difficulty 1) blocks, which is Clique-style proof-of-authority behaviour. Blocks
+are produced at about 1\,s intervals while transactions are pending and the chain idles otherwise. Under sustained
+load, competing blocks at the same height were produced by different signers: over \LiveRuns{} live trials,
+\LiveReorgBlocks{} of \LiveBlocksObserved{} observed blocks (\LiveReorgPct\%) were replaced by a competing block, with
+forks up to \LiveMaxReorg{} blocks deep. Every transaction contained in a replaced block was re-included and verified.
+Inclusion therefore gives only probabilistic finality, and \FinalityDepth{} confirmations are used as the finality
+rule for \poa{} (live and emulated). Shortly after the heaviest load the public network stopped producing blocks
+(Section~\ref{sec:validity}).
+\input{generated/t_live}
+
+\subsection{Evidence integrity (E6)}
+Across \TamperCases{} applicable malicious modifications, the verification detected \TDR\% (95\% CI lower bound
+\TDRlo\%), while \BenignCases{} semantically neutral transformations produced a false-positive rate of \FPR\%
+(upper bound \FPRhi\%). Canonicalisation therefore makes the commitment insensitive to serialisation while any change
+to content, documents or authorisation invalidates it (Table~\ref{tab:tamper}).
+\input{generated/t_tamper}
+\input{generated/t_tamper_ds}
+
+\subsection{Insider tampering (E8)}
+Table~\ref{tab:insider} and Figure~\ref{fig:F11_insider} show the decisive difference between a trusted database and
+a blockchain registry. When the insider only alters evidence (S1), every infrastructure detects it because the stored
+commitment no longer matches. When the insider also rewrites the stored commitment (S2) or inserts a backdated
+replacement record (S3), the database accepts the writes and the audit passes. On the blockchain configurations the
+rewrite is rejected by the contract (records are write-once) and a fabricated record carries the block timestamp of its
+actual inclusion, so both attacks are prevented or detected.
+\input{generated/t_insider}
+\figif{F11_insider}{0.62\linewidth}{Share of privileged-insider attacks prevented or detected (E8).}
+
+\subsection{Batched Merkle commitments (E9)}
+Committing $k$ records under one Merkle root divides the number of blockchain transactions and the gas per record by
+$k$, at the cost of the time a record waits for its batch to close (at most 1\,s). Table~\ref{tab:batching} and
+Figure~\ref{fig:F10_batching} report throughput and end-to-end latency as a function of $k$.
+\input{generated/t_batching}
+\figif{F10_batching}{\linewidth}{Batched commitments: throughput, arrival-to-finality latency and gas per record (E9).}
+
+\subsection{Cross-dataset replication (E7)}
+Table~\ref{tab:datasets} repeats the core workloads on the three datasets. The Kruskal--Wallis $p$-value tests whether
+the dataset changes the median inclusion latency of an infrastructure; a large $p$ indicates that the results do not
+depend on the workload source.
+\input{generated/t_datasets}
+
+\subsection{Latency, finality and throughput (E1)}
+At the common offered load of 50 records/s (W2, 10{,}000 records), the \poa{} emulation, Besu and PostgreSQL all
+sustain the offered load (\TpsWtwoEmu, \TpsWtwoBesu{} and \TpsWtwoDB{} records/s). Median inclusion latency is
+\InclWtwoEmu\,s for \poa{}, \InclWtwoBesu\,s for Besu QBFT and below 5\,ms for PostgreSQL. The Ethereum PoS
+configuration saturates at \TpsWtwoPos{} records/s, so its inclusion latency grows to \InclWtwoPos\,s, which is
+\InclRatioPos{} times the \poa{} value. Finality separates the protocols more sharply
+(Figure~\ref{fig:F9_finality_ladder}): QBFT is final on inclusion (\FinalWtwoBesu\,s), \poa{} reaches its
+\FinalityDepth-confirmation finality in \FinalWtwoEmu\,s, and PoS reaches a finalized checkpoint only after
+\FinalWtwoPos\,s, a factor of \FinalRatioPos{} slower than \poa. Workloads W1--W5 show the same ordering. For \poa{}, throughput
+and latency are essentially independent of workload volume up to 100{,}000 records, whereas the Besu latency varies
+more between workloads and trials (Table~\ref{tab:e1}, Figure~\ref{fig:F3_workloads}).
+\input{generated/t_e1}
+\figif{F1_latency_cdf}{0.55\linewidth}{Commit-latency distribution (E1, W2).}
+\figif{F9_finality_ladder}{0.62\linewidth}{Inclusion versus confirmation-depth finality (E1, W2).}
+\figif{F3_workloads}{\linewidth}{Latency and throughput across workloads W1--W5 (95\% CI).}
+
+\subsection{Capacity under increasing load (E2)}
+Increasing the offered load exposes the capacity of each configuration (Table~\ref{tab:e2},
+Figure~\ref{fig:F2_offered_load_sweep}). The \poa{} emulation sustains \MaxTpsEmu{} records/s with per-record
+commitments, \MaxTpsRatio{} times the \MaxTpsBesu{} records/s of Besu QBFT under the same per-validator CPU budget. At
+200 records/s offered, \poa{} commits \TpsTwoHEmu{} records/s with a median inclusion latency of \LatTwoHEmu\,s,
+whereas Besu is saturated at \TpsTwoHBesu{} records/s and its latency rises to \LatTwoHBesu\,s. PostgreSQL remains the
+fastest system (\MaxTpsDB{} records/s unthrottled), as expected for a single trusted server without replication.
+\input{generated/t_e2}
+\figif{F2_offered_load_sweep}{\linewidth}{Throughput and latency versus offered load (E2).}
+
+\subsection{Validator scaling (E5)}
+With every validator limited to one CPU, the \poa{} emulation keeps its throughput at 200 records/s offered as the
+validator set grows (\VTpsEmuFour, \VTpsEmuSeven{} and \VTpsEmuTen{} records/s for 4, 7 and 10 signers). Besu QBFT
+commits \VTpsBesuFour{} and \VTpsBesuSeven{} records/s with 4 and 7 validators; with 10 validators its BFT event queues
+overflow and the network loses liveness, committing only \BesuTenSuccess\% of the records offered at 50 records/s
+(Table~\ref{tab:e5}, Figure~\ref{fig:F6_validators}). A fresh confirmation run with 10 validators completed but ran at
+less than half the offered rate. The all-to-all message pattern of BFT consensus grows quadratically with the
+validator count, while Clique-style sealing requires one signature per block.
+\input{generated/t_e5}
+\figif{F6_validators}{\linewidth}{Throughput and latency versus validator count (E5).}
+
+\subsection{Evidence size and complexity (E3, E4)}
+Because only the 32-byte commitment is recorded, commit latency does not depend on the size or complexity of the
+evidence (Tables~\ref{tab:e3} and~\ref{tab:e4}). Growth in evidence size and complexity is confined to client-side
+processing (generation, hashing and off-chain storage), which rises from about 1\,ms per record without documents to
+tens of milliseconds for 5\,MB of supporting documents (Figure~\ref{fig:F4_evidence_size}).
+\input{generated/t_e3}
+\figif{F4_evidence_size}{\linewidth}{Evidence processing and commit latency versus evidence size (E3).}
+\input{generated/t_e4}
+\figif{F5_complexity}{\linewidth}{Effect of evidence complexity (E4). The client code is identical for every
+backend; the higher client cost during Besu trials reflects CPU contention from the co-located Java validators.}
+
+\subsection{Efficiency: energy, resources and cost}
+Under the attributed model every four-node blockchain uses \EattEmu\,J per record at 50 records/s, and the PoS
+configuration \EattPos\,J (\EattRatioPos{} times more), because its lower throughput keeps the nodes busy longer for the
+same number of records. The measured dynamic energy of the \poa{} emulation is \EdynEmu\,J per record, \EdynRatioBesu{}
+times lower than Besu QBFT (\EdynBesu\,J) and below Ethereum PoS (\EdynPos\,J); part of this difference comes from the
+client implementations (Go versus Java). Operational cost without fees is \CostEmu{} µUSD per record for \poa{},
+identical to Besu and dominated by the 7-year storage of off-chain evidence. The public-chain configuration adds a gas
+fee of \FeePos\,USD per record at the reference price, which PureChain's zero-gas design removes entirely
+(Table~\ref{tab:efficiency}, Figure~\ref{fig:F7_energy_cost}). Continuous verification of a record takes
+\VerifyEmu\,ms on \poa{}, against \VerifyBesu\,ms on Besu and \VerifyDB\,ms on PostgreSQL
+(Figure~\ref{fig:F8_verification}).
+\input{generated/t_efficiency}
+\figif{F7_energy_cost}{\linewidth}{Energy and total cost per record (E1, W2), including gas fees.}
+\figif{F8_verification}{0.62\linewidth}{Continuous verification time per record.}
+
+% =====================================================================================
+\clearpage
+\section{Summary of findings}\label{sec:summary}
+The research question asked whether a lightweight, zero-gas, \poa-based permissioned blockchain can provide
+cryptographically verifiable audit evidence while reducing latency, energy consumption and operational cost.
+\begin{itemize}
+\item \textbf{Verifiable evidence.} Every committed record verified; \TDR\% of \TamperCases{} malicious modifications
+were detected with no false positives, on all three datasets. Against a privileged insider, the blockchain registry
+prevented or detected 100\% of commitment rewrites and backdated records, while the centralised database detected
+none of them.
+\item \textbf{Versus the conventional public-chain configuration.} \poa{} lowers inclusion latency by a factor of
+\InclRatioPos, finality latency by a factor of \FinalRatioPos{} (\FinalWtwoEmu\,s versus \FinalWtwoPos\,s),
+attributed energy by a factor of \EattRatioPos, and removes the gas fee of \FeePos\,USD per record.
+\item \textbf{Versus the conventional permissioned blockchain.} \poa{} sustains \MaxTpsRatio{} times the per-record
+capacity of Besu QBFT, keeps its throughput from 4 to 10 validators where QBFT loses liveness, and uses
+\EdynRatioBesu{} times less measured dynamic energy. QBFT provides immediate finality, whereas \poa{} needs
+\FinalityDepth{} confirmations (\FinalWtwoEmu\,s).
+\item \textbf{Versus the centralised database.} The database is faster and about 30\% cheaper per record, but it
+provides no protection against an insider who controls it; the blockchain overhead buys independent verifiability.
+\item \textbf{Robustness.} The results do not depend on the workload dataset (smallest Kruskal--Wallis $p$ for
+\poa{}: \KWminEmu) or on evidence size and complexity. Batched Merkle commitments cut gas per record from
+\GasKone{} to \GasKhundred{} and let even the PoS configuration raise throughput from \PosTpsKone{} to
+\PosTpsKfifty{} records/s, but they do not change its finality latency.
+\end{itemize}
+
+% =====================================================================================
+\section{Threats to validity}\label{sec:validity}
+\begin{itemize}
+\item \textbf{Availability of the live network.} The public PureChain RPC endpoint stopped producing blocks during the
+campaign (last block 1{,}807{,}036) while all four validators were still sealing immediately before the halt. The
+controlled experiments were therefore completed on a calibrated \poa{} emulation; live measurements are reported
+separately and will be extended when the endpoint recovers.
+\item \textbf{Emulation fidelity.} The emulation reproduces validator count, block period, gas limit, fee-free
+operation and Clique-style sealing, but not PureChain's modified fork rules, the contextual-association component of
+\poa{}, the fork rate observed on the live network under load, or the wide-area network path.
+\item \textbf{Live network stability.} Under sustained load of about 50 transactions/s the live network produced
+competing blocks (\LiveReorgPct\% of observed blocks) and then halted; this is a property of the deployment at the
+time of measurement and is reported, not excluded.
+\item \textbf{Load-balanced endpoint.} The public endpoint alternates requests between two RPC nodes, so consecutive
+nonces of one account can reach different nodes and be delayed. Live latencies are therefore conservative.
+\item \textbf{Single host.} Local networks share one workstation; per-validator CPU quotas and backend isolation limit,
+but do not remove, co-location effects.
+\item \textbf{Energy model.} Remote validator energy cannot be metered; the attributed model uses a fixed node power and
+is reported with the measured dynamic energy of the client and local containers.
+\item \textbf{Synthetic evidence.} Audit evidence is generated synthetically because real audit evidence is
+confidential; document contents do not affect hashing cost, which depends only on size.
+\end{itemize}
+
+\section*{Data and code availability}
+Workload preprocessing, evidence generation, contract, load generator, analysis and this report are produced by the
+FinVerity simulation framework; every table and figure is regenerated from the raw trial data with
+\texttt{python -m analysis.report}.
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

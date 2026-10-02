@@ -1,0 +1,31 @@
+# secrets and local environment
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# third-party datasets (download with scripts/get_data.py) and derived data
+data/raw/
+data/processed/
+data/evidence_store/
+
+# local blockchain networks: generated keys and chain state
+infra/besu_network/
+infra/ethpos_network/
+infra/poa2_network/
+
+# per-record raw measurements (1.5 GB) are published as a GitHub release asset
+results/raw/**/items.parquet
+results/*.out
+
+# LaTeX build artefacts
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out
+paper/build.txt
+paper/lmk.txt

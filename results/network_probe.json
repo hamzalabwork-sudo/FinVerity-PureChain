@@ -1,0 +1,20 @@
+{
+ "chain_id": 900520900520,
+ "client": "Geth/PureChain-Idle-Hub/v1.13.15-stable-e735e838/linux-amd64/go1.21.12",
+ "head": 1805830,
+ "gas_price": 0,
+ "peers": 5,
+ "block_gas_limit": 30000000,
+ "validators_observed": [
+  "0x03DF376cD39dd1706A903126dBC382846DB16929",
+  "0x5B7A1a9b6B4500C3f1ff359DC217F374AA59ddb1",
+  "0x82293AeC2dD5816A1D88b9a15b645E018B5b7e1e",
+  "0xc6A79c2d19944574372C64B6bf28551832b2B1f9"
+ ],
+ "n_validators": 4,
+ "in_turn_share": 0.71,
+ "block_gap_s_median": 1,
+ "block_gap_s_max": 16481,
+ "rpc_rtt_ms_median": 15.680600015912205,
+ "rpc_rtt_ms_min": 14.939299959223717
+}

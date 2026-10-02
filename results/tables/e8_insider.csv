@@ -1,0 +1,13 @@
+scenario,backend,detected,prevented,undetected,cases,protected_pct
+S1_evidence_only,besu,700,0,0,700,100.0
+S1_evidence_only,db_postgres,700,0,0,700,100.0
+S1_evidence_only,ethpos,200,0,0,200,100.0
+S1_evidence_only,poa2_local,700,0,0,700,100.0
+S2_commitment_rewrite,besu,0,700,0,700,100.0
+S2_commitment_rewrite,db_postgres,0,0,700,700,0.0
+S2_commitment_rewrite,ethpos,0,200,0,200,100.0
+S2_commitment_rewrite,poa2_local,0,700,0,700,100.0
+S3_backdated_record,besu,700,0,0,700,100.0
+S3_backdated_record,db_postgres,0,0,700,700,0.0
+S3_backdated_record,ethpos,200,0,0,200,100.0
+S3_backdated_record,poa2_local,700,0,0,700,100.0

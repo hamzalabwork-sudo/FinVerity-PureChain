@@ -1,0 +1,777 @@
+2026-09-28 23:13:30 == E1: 30 trials (scale=quick)
+2026-09-28 23:13:31 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:13:32 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:13:32 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] prepared 50 records in 0.3s
+2026-09-28 23:13:34 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] submission phase 0.9s, busy 1.6s
+2026-09-28 23:13:34 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] committed 50/50 | 41.8 tps | latency median 0.739s p95 1.149s | verify 1.0
+2026-09-28 23:13:34 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:13:36 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:13:36 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] prepared 50 records in 0.4s
+2026-09-28 23:13:38 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] submission phase 0.9s, busy 1.9s
+2026-09-28 23:13:38 [W1_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] committed 50/50 | 34.0 tps | latency median 0.798s p95 1.153s | verify 1.0
+2026-09-28 23:13:38 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:13:40 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:13:40 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.3s
+2026-09-28 23:13:43 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 2.7s
+2026-09-28 23:13:43 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 43.6 tps | latency median 0.856s p95 1.220s | verify 1.0
+2026-09-28 23:13:43 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:13:45 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:13:45 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 0.7s
+2026-09-28 23:13:49 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.2s, busy 3.1s
+2026-09-28 23:13:49 [W2_besu_momtsim_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 36.7 tps | latency median 0.751s p95 1.206s | verify 1.0
+2026-09-28 23:13:49 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:13:53 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:13:53 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t0_quick] prepared 500 records in 3.1s
+2026-09-28 23:14:05 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t0_quick] submission phase 9.8s, busy 11.2s
+2026-09-28 23:14:06 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t0_quick] committed 500/500 | 47.0 tps | latency median 0.744s p95 1.183s | verify 1.0
+2026-09-28 23:14:07 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:14:10 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:14:11 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t1_quick] prepared 500 records in 3.1s
+2026-09-28 23:14:22 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t1_quick] submission phase 10.0s, busy 11.0s
+2026-09-28 23:14:23 [W3_besu_momtsim_n500_L4_d102400_r50_s1_t1_quick] committed 500/500 | 48.1 tps | latency median 0.710s p95 1.166s | verify 1.0
+2026-09-28 23:14:23 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:14:29 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:14:30 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t0_quick] prepared 1000 records in 6.1s
+2026-09-28 23:14:52 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t0_quick] submission phase 20.4s, busy 21.4s
+2026-09-28 23:14:55 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t0_quick] committed 1000/1000 | 48.6 tps | latency median 0.660s p95 1.156s | verify 1.0
+2026-09-28 23:14:55 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:15:01 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:15:02 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t1_quick] prepared 1000 records in 5.9s
+2026-09-28 23:15:24 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t1_quick] submission phase 20.2s, busy 22.0s
+2026-09-28 23:15:27 [W4_besu_momtsim_n1000_L4_d102400_r50_s1_t1_quick] committed 1000/1000 | 47.2 tps | latency median 0.692s p95 1.154s | verify 1.0
+2026-09-28 23:15:27 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t0_quick] setup
+2026-09-28 23:15:29 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:15:29 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t0_quick] prepared 100 records in 1.1s
+2026-09-28 23:15:32 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t0_quick] submission phase 1.9s, busy 2.4s
+2026-09-28 23:15:32 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t0_quick] committed 100/100 | 48.3 tps | latency median 0.722s p95 1.056s | verify 1.0
+2026-09-28 23:15:32 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t1_quick] setup
+2026-09-28 23:15:34 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t1_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:15:34 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t1_quick] prepared 100 records in 1.3s
+2026-09-28 23:15:38 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t1_quick] submission phase 2.2s, busy 3.0s
+2026-09-28 23:15:38 [W5_besu_momtsim_n100_L4_d1048576_r50_s1_t1_quick] committed 100/100 | 38.4 tps | latency median 0.725s p95 1.104s | verify 1.0
+2026-09-28 23:15:38 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:15:39 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:15:40 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:15:41 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] committed 50/50 | 56.8 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:15:41 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:15:41 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] prepared 50 records in 0.2s
+2026-09-28 23:15:43 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:15:43 [W1_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] committed 50/50 | 55.0 tps | latency median 0.003s p95 0.005s | verify 1.0
+2026-09-28 23:15:43 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:15:44 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.3s
+2026-09-28 23:15:46 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 2.1s
+2026-09-28 23:15:46 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 52.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:15:46 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:15:47 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 0.4s
+2026-09-28 23:15:50 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.2s, busy 2.4s
+2026-09-28 23:15:50 [W2_db_postgres_momtsim_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 45.5 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:15:50 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:15:53 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t0_quick] prepared 500 records in 2.6s
+2026-09-28 23:16:04 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t0_quick] submission phase 9.8s, busy 10.0s
+2026-09-28 23:16:04 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t0_quick] committed 500/500 | 51.2 tps | latency median 0.003s p95 0.005s | verify 1.0
+2026-09-28 23:16:04 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:16:07 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t1_quick] prepared 500 records in 2.5s
+2026-09-28 23:16:18 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t1_quick] submission phase 10.0s, busy 10.2s
+2026-09-28 23:16:18 [W3_db_postgres_momtsim_n500_L4_d102400_r50_s1_t1_quick] committed 500/500 | 49.9 tps | latency median 0.003s p95 0.005s | verify 1.0
+2026-09-28 23:16:18 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:16:24 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t0_quick] prepared 1000 records in 4.8s
+2026-09-28 23:16:45 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t0_quick] submission phase 20.4s, busy 20.6s
+2026-09-28 23:16:45 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t0_quick] committed 1000/1000 | 49.0 tps | latency median 0.003s p95 0.005s | verify 1.0
+2026-09-28 23:16:46 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:16:51 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t1_quick] prepared 1000 records in 4.7s
+2026-09-28 23:17:11 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t1_quick] submission phase 20.1s, busy 20.3s
+2026-09-28 23:17:12 [W4_db_postgres_momtsim_n1000_L4_d102400_r50_s1_t1_quick] committed 1000/1000 | 49.7 tps | latency median 0.003s p95 0.005s | verify 1.0
+2026-09-28 23:17:12 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t0_quick] setup
+2026-09-28 23:17:14 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t0_quick] prepared 100 records in 0.9s
+2026-09-28 23:17:16 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t0_quick] submission phase 1.9s, busy 2.1s
+2026-09-28 23:17:16 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t0_quick] committed 100/100 | 52.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:17:17 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t1_quick] setup
+2026-09-28 23:17:18 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t1_quick] prepared 100 records in 1.1s
+2026-09-28 23:17:21 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t1_quick] submission phase 2.2s, busy 2.4s
+2026-09-28 23:17:21 [W5_db_postgres_momtsim_n100_L4_d1048576_r50_s1_t1_quick] committed 100/100 | 45.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:17:21 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:17:23 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 154514
+2026-09-28 23:17:23 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:17:30 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:17:30 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] committed 47/50 | 36.6 tps | latency median 0.568s p95 1.032s | verify 1.0
+2026-09-28 23:17:30 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:17:32 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 154502
+2026-09-28 23:17:32 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:17:40 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] submission phase 0.9s, busy 3.5s
+2026-09-28 23:17:41 [W1_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] committed 50/50 | 15.8 tps | latency median 1.147s p95 1.590s | verify 1.0
+2026-09-28 23:17:41 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:17:43 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:17:43 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.4s
+2026-09-28 23:17:51 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 3.8s
+2026-09-28 23:17:52 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 29.1 tps | latency median 1.409s p95 1.858s | verify 1.0
+2026-09-28 23:17:52 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:17:54 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:17:54 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 0.5s
+2026-09-28 23:18:03 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.3s, busy 3.8s
+2026-09-28 23:18:03 [W2_purechain_momtsim_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 29.6 tps | latency median 1.357s p95 2.165s | verify 1.0
+2026-09-28 23:18:03 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:18:07 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:18:08 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t0_quick] prepared 500 records in 3.0s
+2026-09-28 23:18:26 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t0_quick] submission phase 9.9s, busy 13.3s
+2026-09-28 23:18:28 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t0_quick] committed 500/500 | 39.7 tps | latency median 2.177s p95 3.468s | verify 1.0
+2026-09-28 23:18:28 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:18:32 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:18:32 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t1_quick] prepared 500 records in 3.0s
+2026-09-28 23:23:48 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t1_quick] submission phase 10.1s, busy 310.8s
+2026-09-28 23:23:50 [W3_purechain_momtsim_n500_L4_d102400_r50_s1_t1_quick] committed 497/500 | 38.9 tps | latency median 2.998s p95 4.595s | verify 1.0
+2026-09-28 23:23:50 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:23:56 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:23:57 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t0_quick] prepared 1000 records in 6.0s
+2026-09-28 23:29:23 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t0_quick] submission phase 20.4s, busy 321.4s
+2026-09-28 23:29:27 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t0_quick] committed 988/1000 | 45.1 tps | latency median 2.841s p95 4.398s | verify 1.0
+2026-09-28 23:29:27 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:29:33 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:29:34 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t1_quick] prepared 1000 records in 5.9s
+2026-09-28 23:35:00 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t1_quick] submission phase 20.4s, busy 321.5s
+2026-09-28 23:35:03 [W4_purechain_momtsim_n1000_L4_d102400_r50_s1_t1_quick] committed 893/1000 | 32.2 tps | latency median 4.143s p95 11.261s | verify 1.0
+2026-09-28 23:35:03 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t0_quick] setup
+2026-09-28 23:35:06 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t0_quick] gas estimate recordEvidence = 154514
+2026-09-28 23:35:06 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t0_quick] prepared 100 records in 1.1s
+2026-09-28 23:35:15 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t0_quick] submission phase 1.9s, busy 4.0s
+2026-09-28 23:35:16 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t0_quick] committed 100/100 | 27.5 tps | latency median 1.376s p95 2.287s | verify 1.0
+2026-09-28 23:35:16 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t1_quick] setup
+2026-09-28 23:35:19 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t1_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:35:19 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t1_quick] prepared 100 records in 1.3s
+2026-09-28 23:35:27 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t1_quick] submission phase 2.2s, busy 4.1s
+2026-09-28 23:35:28 [W5_purechain_momtsim_n100_L4_d1048576_r50_s1_t1_quick] committed 73/100 | 27.9 tps | latency median 1.236s p95 1.721s | verify 1.0
+2026-09-28 23:35:28 == E2: 42 trials (scale=quick)
+2026-09-28 23:35:29 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t0_quick] setup
+2026-09-28 23:35:29 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:35:30 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t0_quick] prepared 50 records in 0.3s
+2026-09-28 23:35:36 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t0_quick] submission phase 4.4s, busy 5.6s
+2026-09-28 23:35:36 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t0_quick] committed 50/50 | 9.4 tps | latency median 0.648s p95 1.039s | verify 1.0
+2026-09-28 23:35:36 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t1_quick] setup
+2026-09-28 23:35:37 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t1_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:35:37 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:35:43 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t1_quick] submission phase 4.5s, busy 5.0s
+2026-09-28 23:35:43 [E2_besu_momtsim_n50_L4_d10240_r10_s1_t1_quick] committed 50/50 | 10.6 tps | latency median 0.523s p95 0.968s | verify 1.0
+2026-09-28 23:35:43 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t0_quick] setup
+2026-09-28 23:35:44 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:35:44 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:35:47 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t0_quick] submission phase 1.8s, busy 2.3s
+2026-09-28 23:35:47 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t0_quick] committed 50/50 | 25.9 tps | latency median 0.430s p95 0.950s | verify 1.0
+2026-09-28 23:35:47 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t1_quick] setup
+2026-09-28 23:35:48 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t1_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:35:48 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:35:52 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t1_quick] submission phase 1.8s, busy 3.0s
+2026-09-28 23:35:52 [E2_besu_momtsim_n50_L4_d10240_r25_s1_t1_quick] committed 50/50 | 18.8 tps | latency median 0.653s p95 1.041s | verify 1.0
+2026-09-28 23:35:52 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:35:53 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:35:53 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:35:56 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] submission phase 0.9s, busy 2.3s
+2026-09-28 23:35:56 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t0_quick] committed 50/50 | 25.7 tps | latency median 0.660s p95 1.089s | verify 1.0
+2026-09-28 23:35:56 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:35:57 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:35:57 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:36:00 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:36:00 [E2_besu_momtsim_n50_L4_d10240_r50_s1_t1_quick] committed 50/50 | 27.6 tps | latency median 0.573s p95 1.071s | verify 1.0
+2026-09-28 23:36:00 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t0_quick] setup
+2026-09-28 23:36:01 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:36:01 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:36:03 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t0_quick] submission phase 0.4s, busy 1.2s
+2026-09-28 23:36:03 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t0_quick] committed 50/50 | 57.9 tps | latency median 0.636s p95 0.841s | verify 1.0
+2026-09-28 23:36:03 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t1_quick] setup
+2026-09-28 23:36:04 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t1_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:36:04 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t1_quick] prepared 50 records in 0.4s
+2026-09-28 23:36:06 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t1_quick] submission phase 0.5s, busy 1.0s
+2026-09-28 23:36:06 [E2_besu_momtsim_n50_L4_d10240_r100_s1_t1_quick] committed 50/50 | 73.2 tps | latency median 0.408s p95 0.605s | verify 1.0
+2026-09-28 23:36:06 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t0_quick] setup
+2026-09-28 23:36:07 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t0_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:36:07 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t0_quick] prepared 60 records in 0.2s
+2026-09-28 23:36:09 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t0_quick] submission phase 0.3s, busy 1.3s
+2026-09-28 23:36:09 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t0_quick] committed 60/60 | 62.1 tps | latency median 0.798s p95 0.953s | verify 1.0
+2026-09-28 23:36:09 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t1_quick] setup
+2026-09-28 23:36:10 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t1_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:36:11 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t1_quick] prepared 60 records in 0.5s
+2026-09-28 23:36:13 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t1_quick] submission phase 0.3s, busy 1.7s
+2026-09-28 23:36:13 [E2_besu_momtsim_n60_L4_d10240_r200_s1_t1_quick] committed 60/60 | 43.0 tps | latency median 0.345s p95 0.466s | verify 1.0
+2026-09-28 23:36:13 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t0_quick] setup
+2026-09-28 23:36:14 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t0_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:36:14 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t0_quick] prepared 120 records in 0.5s
+2026-09-28 23:36:17 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t0_quick] submission phase 0.3s, busy 1.8s
+2026-09-28 23:36:17 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t0_quick] committed 120/120 | 86.4 tps | latency median 0.459s p95 1.168s | verify 1.0
+2026-09-28 23:36:17 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t1_quick] setup
+2026-09-28 23:36:19 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t1_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:36:19 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t1_quick] prepared 120 records in 0.7s
+2026-09-28 23:36:21 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t1_quick] submission phase 0.3s, busy 1.6s
+2026-09-28 23:36:21 [E2_besu_momtsim_n120_L4_d10240_r400_s1_t1_quick] committed 120/120 | 98.0 tps | latency median 1.083s p95 1.201s | verify 1.0
+2026-09-28 23:36:21 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t0_quick] setup
+2026-09-28 23:36:22 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t0_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:36:23 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t0_quick] prepared 50 records in 0.3s
+2026-09-28 23:36:24 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t0_quick] submission phase 0.1s, busy 0.9s
+2026-09-28 23:36:24 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t0_quick] committed 50/50 | 86.5 tps | latency median 0.541s p95 0.577s | verify 1.0
+2026-09-28 23:36:24 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t1_quick] setup
+2026-09-28 23:36:25 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t1_quick] gas estimate recordEvidence = 153299
+2026-09-28 23:36:25 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:36:27 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t1_quick] submission phase 0.1s, busy 1.0s
+2026-09-28 23:36:27 [E2_besu_momtsim_n50_L4_d10240_r0_s1_t1_quick] committed 50/50 | 75.4 tps | latency median 0.632s p95 0.663s | verify 1.0
+2026-09-28 23:36:27 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t0_quick] setup
+2026-09-28 23:36:28 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t0_quick] prepared 50 records in 0.1s
+2026-09-28 23:36:33 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t0_quick] submission phase 4.4s, busy 4.6s
+2026-09-28 23:36:33 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t0_quick] committed 50/50 | 11.3 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:33 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t1_quick] setup
+2026-09-28 23:36:34 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:36:39 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t1_quick] submission phase 4.5s, busy 4.7s
+2026-09-28 23:36:39 [E2_db_postgres_momtsim_n50_L4_d10240_r10_s1_t1_quick] committed 50/50 | 11.0 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:36:39 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t0_quick] setup
+2026-09-28 23:36:40 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:36:42 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t0_quick] submission phase 1.8s, busy 2.0s
+2026-09-28 23:36:42 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t0_quick] committed 50/50 | 28.3 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:36:42 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t1_quick] setup
+2026-09-28 23:36:43 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:36:46 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t1_quick] submission phase 1.8s, busy 2.0s
+2026-09-28 23:36:46 [E2_db_postgres_momtsim_n50_L4_d10240_r25_s1_t1_quick] committed 50/50 | 27.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:46 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:36:47 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:36:48 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:36:48 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_quick] committed 50/50 | 56.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:48 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:36:49 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] prepared 50 records in 0.2s
+2026-09-28 23:36:51 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:36:51 [E2_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_quick] committed 50/50 | 55.0 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:51 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t0_quick] setup
+2026-09-28 23:36:51 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:36:53 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t0_quick] submission phase 0.4s, busy 0.7s
+2026-09-28 23:36:53 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t0_quick] committed 50/50 | 112.8 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:53 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t1_quick] setup
+2026-09-28 23:36:54 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:36:55 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t1_quick] submission phase 0.5s, busy 0.7s
+2026-09-28 23:36:55 [E2_db_postgres_momtsim_n50_L4_d10240_r100_s1_t1_quick] committed 50/50 | 109.8 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:55 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t0_quick] setup
+2026-09-28 23:36:56 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t0_quick] prepared 60 records in 0.2s
+2026-09-28 23:36:56 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t0_quick] submission phase 0.3s, busy 0.5s
+2026-09-28 23:36:57 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t0_quick] committed 60/60 | 219.7 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:57 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t1_quick] setup
+2026-09-28 23:36:58 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t1_quick] prepared 60 records in 0.4s
+2026-09-28 23:36:59 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t1_quick] submission phase 0.3s, busy 0.5s
+2026-09-28 23:36:59 [E2_db_postgres_momtsim_n60_L4_d10240_r200_s1_t1_quick] committed 60/60 | 213.0 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:36:59 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t0_quick] setup
+2026-09-28 23:36:59 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t0_quick] prepared 120 records in 0.3s
+2026-09-28 23:37:00 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t0_quick] submission phase 0.3s, busy 0.5s
+2026-09-28 23:37:01 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t0_quick] committed 120/120 | 366.3 tps | latency median 0.007s p95 0.014s | verify 1.0
+2026-09-28 23:37:01 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t1_quick] setup
+2026-09-28 23:37:02 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t1_quick] prepared 120 records in 0.6s
+2026-09-28 23:37:03 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t1_quick] submission phase 0.3s, busy 0.5s
+2026-09-28 23:37:03 [E2_db_postgres_momtsim_n120_L4_d10240_r400_s1_t1_quick] committed 120/120 | 360.7 tps | latency median 0.004s p95 0.007s | verify 1.0
+2026-09-28 23:37:03 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t0_quick] setup
+2026-09-28 23:37:04 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t0_quick] prepared 50 records in 0.1s
+2026-09-28 23:37:04 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t0_quick] submission phase 0.0s, busy 0.3s
+2026-09-28 23:37:04 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t0_quick] committed 50/50 | 1140.7 tps | latency median 0.012s p95 0.018s | verify 1.0
+2026-09-28 23:37:05 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t1_quick] setup
+2026-09-28 23:37:05 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t1_quick] prepared 50 records in 0.2s
+2026-09-28 23:37:06 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t1_quick] submission phase 0.0s, busy 0.2s
+2026-09-28 23:37:06 [E2_db_postgres_momtsim_n50_L4_d10240_r0_s1_t1_quick] committed 50/50 | 1167.4 tps | latency median 0.013s p95 0.016s | verify 1.0
+2026-09-28 23:37:06 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t0_quick] setup
+2026-09-28 23:37:08 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t0_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:37:08 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t0_quick] prepared 50 records in 0.3s
+2026-09-28 23:37:21 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t0_quick] submission phase 4.4s, busy 5.5s
+2026-09-28 23:37:21 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t0_quick] committed 33/50 | 8.5 tps | latency median 0.602s p95 1.276s | verify 1.0
+2026-09-28 23:37:21 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t1_quick] setup
+2026-09-28 23:37:23 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t1_quick] gas estimate recordEvidence = 154502
+2026-09-28 23:37:23 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:37:33 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t1_quick] submission phase 4.6s, busy 5.5s
+2026-09-28 23:37:34 [E2_purechain_momtsim_n50_L4_d10240_r10_s1_t1_quick] committed 50/50 | 9.7 tps | latency median 1.001s p95 1.741s | verify 1.0
+2026-09-28 23:37:34 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t0_quick] setup
+2026-09-28 23:37:36 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t0_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:37:36 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:37:44 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t0_quick] submission phase 1.8s, busy 3.5s
+2026-09-28 23:37:45 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t0_quick] committed 50/50 | 16.1 tps | latency median 1.219s p95 1.700s | verify 1.0
+2026-09-28 23:37:45 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t1_quick] setup
+2026-09-28 23:37:46 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t1_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:37:46 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:37:54 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t1_quick] submission phase 1.9s, busy 3.1s
+2026-09-28 23:37:55 [E2_purechain_momtsim_n50_L4_d10240_r25_s1_t1_quick] committed 50/50 | 18.3 tps | latency median 0.962s p95 1.331s | verify 1.0
+2026-09-28 23:37:55 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:37:57 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 154514
+2026-09-28 23:37:57 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:38:03 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] submission phase 0.9s, busy 2.0s
+2026-09-28 23:38:04 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t0_quick] committed 50/50 | 31.3 tps | latency median 1.065s p95 1.522s | verify 1.0
+2026-09-28 23:38:04 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:38:06 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:38:06 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:38:14 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] submission phase 0.9s, busy 2.9s
+2026-09-28 23:38:15 [E2_purechain_momtsim_n50_L4_d10240_r50_s1_t1_quick] committed 50/50 | 20.0 tps | latency median 1.605s p95 1.954s | verify 1.0
+2026-09-28 23:38:15 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t0_quick] setup
+2026-09-28 23:38:16 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t0_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:38:17 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:38:23 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t0_quick] submission phase 0.5s, busy 2.0s
+2026-09-28 23:38:24 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t0_quick] committed 50/50 | 29.9 tps | latency median 1.250s p95 1.499s | verify 1.0
+2026-09-28 23:38:24 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t1_quick] setup
+2026-09-28 23:38:26 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t1_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:38:26 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:38:33 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t1_quick] submission phase 0.5s, busy 2.5s
+2026-09-28 23:38:34 [E2_purechain_momtsim_n50_L4_d10240_r100_s1_t1_quick] committed 49/50 | 38.5 tps | latency median 1.005s p95 1.196s | verify 1.0
+2026-09-28 23:38:34 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t0_quick] setup
+2026-09-28 23:38:36 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t0_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:38:36 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t0_quick] prepared 60 records in 0.3s
+2026-09-28 23:38:42 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t0_quick] submission phase 0.3s, busy 2.0s
+2026-09-28 23:38:43 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t0_quick] committed 60/60 | 36.5 tps | latency median 1.424s p95 1.554s | verify 1.0
+2026-09-28 23:38:43 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t1_quick] setup
+2026-09-28 23:38:45 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t1_quick] gas estimate recordEvidence = 154514
+2026-09-28 23:38:45 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t1_quick] prepared 60 records in 0.3s
+2026-09-28 23:38:52 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t1_quick] submission phase 0.4s, busy 2.8s
+2026-09-28 23:38:53 [E2_purechain_momtsim_n60_L4_d10240_r200_s1_t1_quick] committed 60/60 | 24.9 tps | latency median 2.158s p95 2.287s | verify 1.0
+2026-09-28 23:38:53 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t0_quick] setup
+2026-09-28 23:38:55 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t0_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:38:55 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t0_quick] prepared 120 records in 0.4s
+2026-09-28 23:39:02 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t0_quick] submission phase 0.5s, busy 2.5s
+2026-09-28 23:39:03 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t0_quick] committed 120/120 | 59.7 tps | latency median 1.220s p95 1.640s | verify 1.0
+2026-09-28 23:39:03 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t1_quick] setup
+2026-09-28 23:39:05 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:39:05 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t1_quick] prepared 120 records in 0.7s
+2026-09-28 23:39:13 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t1_quick] submission phase 0.5s, busy 2.4s
+2026-09-28 23:39:13 [E2_purechain_momtsim_n120_L4_d10240_r400_s1_t1_quick] committed 120/120 | 59.9 tps | latency median 1.247s p95 1.890s | verify 1.0
+2026-09-28 23:39:13 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t0_quick] setup
+2026-09-28 23:39:15 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t0_quick] gas estimate recordEvidence = 154502
+2026-09-28 23:39:15 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:39:22 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t0_quick] submission phase 0.2s, busy 2.3s
+2026-09-28 23:39:23 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t0_quick] committed 50/50 | 26.4 tps | latency median 1.123s p95 1.179s | verify 1.0
+2026-09-28 23:39:23 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t1_quick] setup
+2026-09-28 23:39:25 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:39:25 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:39:31 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t1_quick] submission phase 0.2s, busy 1.9s
+2026-09-28 23:39:32 [E2_purechain_momtsim_n50_L4_d10240_r0_s1_t1_quick] committed 50/50 | 31.1 tps | latency median 1.509s p95 1.608s | verify 1.0
+2026-09-28 23:39:32 == E3: 30 trials (scale=quick)
+2026-09-28 23:39:32 [E3_besu_momtsim_n50_L4_d0_r50_s1_t0_none_quick] setup
+2026-09-28 23:39:33 [E3_besu_momtsim_n50_L4_d0_r50_s1_t0_none_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:39:33 [E3_besu_momtsim_n50_L4_d0_r50_s1_t0_none_quick] prepared 50 records in 0.2s
+2026-09-28 23:39:36 [E3_besu_momtsim_n50_L4_d0_r50_s1_t0_none_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:39:36 [E3_besu_momtsim_n50_L4_d0_r50_s1_t0_none_quick] committed 50/50 | 28.6 tps | latency median 0.765s p95 1.042s | verify 1.0
+2026-09-28 23:39:36 [E3_besu_momtsim_n50_L4_d0_r50_s1_t1_none_quick] setup
+2026-09-28 23:39:37 [E3_besu_momtsim_n50_L4_d0_r50_s1_t1_none_quick] gas estimate recordEvidence = 153291
+2026-09-28 23:39:37 [E3_besu_momtsim_n50_L4_d0_r50_s1_t1_none_quick] prepared 50 records in 0.3s
+2026-09-28 23:39:40 [E3_besu_momtsim_n50_L4_d0_r50_s1_t1_none_quick] submission phase 0.9s, busy 2.2s
+2026-09-28 23:39:40 [E3_besu_momtsim_n50_L4_d0_r50_s1_t1_none_quick] committed 50/50 | 27.4 tps | latency median 0.543s p95 1.047s | verify 1.0
+2026-09-28 23:39:40 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] setup
+2026-09-28 23:39:41 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:39:41 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] prepared 50 records in 0.2s
+2026-09-28 23:39:44 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] submission phase 0.9s, busy 2.2s
+2026-09-28 23:39:44 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] committed 50/50 | 27.1 tps | latency median 0.677s p95 1.093s | verify 1.0
+2026-09-28 23:39:44 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] setup
+2026-09-28 23:39:45 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:39:45 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] prepared 50 records in 0.3s
+2026-09-28 23:39:48 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:39:48 [E3_besu_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] committed 50/50 | 28.4 tps | latency median 0.562s p95 1.021s | verify 1.0
+2026-09-28 23:39:48 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] setup
+2026-09-28 23:39:49 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:39:49 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] prepared 50 records in 0.2s
+2026-09-28 23:39:52 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] submission phase 0.9s, busy 2.2s
+2026-09-28 23:39:52 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] committed 50/50 | 26.7 tps | latency median 0.651s p95 1.036s | verify 1.0
+2026-09-28 23:39:52 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] setup
+2026-09-28 23:39:53 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] gas estimate recordEvidence = 153311
+2026-09-28 23:39:53 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] prepared 50 records in 0.4s
+2026-09-28 23:39:56 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] submission phase 0.9s, busy 2.0s
+2026-09-28 23:39:56 [E3_besu_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] committed 50/50 | 29.7 tps | latency median 0.586s p95 1.051s | verify 1.0
+2026-09-28 23:39:56 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] setup
+2026-09-28 23:39:57 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:39:58 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] prepared 50 records in 0.7s
+2026-09-28 23:40:00 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] submission phase 0.9s, busy 1.8s
+2026-09-28 23:40:00 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] committed 50/50 | 34.5 tps | latency median 0.690s p95 1.163s | verify 1.0
+2026-09-28 23:40:00 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] setup
+2026-09-28 23:40:02 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:40:02 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] prepared 50 records in 0.7s
+2026-09-28 23:40:04 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] submission phase 0.9s, busy 1.7s
+2026-09-28 23:40:04 [E3_besu_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] committed 50/50 | 37.0 tps | latency median 0.749s p95 1.168s | verify 1.0
+2026-09-28 23:40:04 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] setup
+2026-09-28 23:40:07 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:40:07 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] prepared 50 records in 2.3s
+2026-09-28 23:40:10 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] submission phase 0.9s, busy 2.0s
+2026-09-28 23:40:10 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] committed 50/50 | 30.3 tps | latency median 0.713s p95 1.035s | verify 1.0
+2026-09-28 23:40:10 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] setup
+2026-09-28 23:40:13 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:40:13 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] prepared 50 records in 2.3s
+2026-09-28 23:40:16 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] submission phase 0.9s, busy 1.9s
+2026-09-28 23:40:16 [E3_besu_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] committed 50/50 | 31.7 tps | latency median 0.683s p95 1.031s | verify 1.0
+2026-09-28 23:40:16 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t0_none_quick] setup
+2026-09-28 23:40:17 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t0_none_quick] prepared 50 records in 0.2s
+2026-09-28 23:40:18 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t0_none_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:18 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t0_none_quick] committed 50/50 | 56.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:40:18 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t1_none_quick] setup
+2026-09-28 23:40:19 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t1_none_quick] prepared 50 records in 0.2s
+2026-09-28 23:40:21 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t1_none_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:21 [E3_db_postgres_momtsim_n50_L4_d0_r50_s1_t1_none_quick] committed 50/50 | 55.0 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:40:21 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] setup
+2026-09-28 23:40:21 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] prepared 50 records in 0.2s
+2026-09-28 23:40:23 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:23 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] committed 50/50 | 56.6 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:40:23 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] setup
+2026-09-28 23:40:24 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] prepared 50 records in 0.2s
+2026-09-28 23:40:25 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:25 [E3_db_postgres_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] committed 50/50 | 55.1 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:40:26 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] setup
+2026-09-28 23:40:26 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] prepared 50 records in 0.2s
+2026-09-28 23:40:28 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:28 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] committed 50/50 | 56.6 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:40:28 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] setup
+2026-09-28 23:40:29 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] prepared 50 records in 0.3s
+2026-09-28 23:40:30 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:30 [E3_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] committed 50/50 | 55.0 tps | latency median 0.004s p95 0.010s | verify 1.0
+2026-09-28 23:40:30 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] setup
+2026-09-28 23:40:31 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] prepared 50 records in 0.5s
+2026-09-28 23:40:33 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:33 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] committed 50/50 | 56.5 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:40:33 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] setup
+2026-09-28 23:40:34 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] prepared 50 records in 0.6s
+2026-09-28 23:40:36 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:36 [E3_db_postgres_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] committed 50/50 | 55.0 tps | latency median 0.003s p95 0.004s | verify 1.0
+2026-09-28 23:40:36 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] setup
+2026-09-28 23:40:38 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] prepared 50 records in 2.2s
+2026-09-28 23:40:40 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:40 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] committed 50/50 | 56.5 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:40:40 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] setup
+2026-09-28 23:40:43 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] prepared 50 records in 2.3s
+2026-09-28 23:40:45 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:40:45 [E3_db_postgres_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] committed 50/50 | 55.0 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:40:45 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t0_none_quick] setup
+2026-09-28 23:40:47 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t0_none_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:40:47 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t0_none_quick] prepared 50 records in 0.2s
+2026-09-28 23:40:54 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t0_none_quick] submission phase 0.9s, busy 2.3s
+2026-09-28 23:40:55 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t0_none_quick] committed 50/50 | 31.3 tps | latency median 1.141s p95 1.551s | verify 1.0
+2026-09-28 23:40:55 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t1_none_quick] setup
+2026-09-28 23:40:56 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t1_none_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:40:56 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t1_none_quick] prepared 50 records in 0.3s
+2026-09-28 23:41:04 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t1_none_quick] submission phase 1.0s, busy 2.8s
+2026-09-28 23:41:05 [E3_purechain_momtsim_n50_L4_d0_r50_s1_t1_none_quick] committed 50/50 | 20.5 tps | latency median 1.184s p95 1.581s | verify 1.0
+2026-09-28 23:41:05 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] setup
+2026-09-28 23:41:07 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:41:07 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] prepared 50 records in 0.2s
+2026-09-28 23:41:14 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] submission phase 0.9s, busy 2.6s
+2026-09-28 23:41:15 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t0_small_quick] committed 50/50 | 22.4 tps | latency median 1.208s p95 1.477s | verify 1.0
+2026-09-28 23:41:15 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] setup
+2026-09-28 23:41:17 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:41:17 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] prepared 50 records in 0.3s
+2026-09-28 23:41:24 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] submission phase 0.9s, busy 2.4s
+2026-09-28 23:41:25 [E3_purechain_momtsim_n50_L4_d10240_r50_s1_t1_small_quick] committed 32/50 | 25.5 tps | latency median 0.801s p95 1.153s | verify 1.0
+2026-09-28 23:41:25 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] setup
+2026-09-28 23:41:27 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] gas estimate recordEvidence = 154514
+2026-09-28 23:41:27 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] prepared 50 records in 0.3s
+2026-09-28 23:41:35 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] submission phase 0.9s, busy 2.3s
+2026-09-28 23:41:36 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t0_medium_quick] committed 50/50 | 25.1 tps | latency median 1.120s p95 1.321s | verify 1.0
+2026-09-28 23:41:36 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] setup
+2026-09-28 23:41:38 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:41:38 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] prepared 50 records in 0.3s
+2026-09-28 23:41:44 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] submission phase 0.9s, busy 1.9s
+2026-09-28 23:41:45 [E3_purechain_momtsim_n50_L4_d102400_r50_s1_t1_medium_quick] committed 50/50 | 31.1 tps | latency median 1.030s p95 1.432s | verify 1.0
+2026-09-28 23:41:45 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] setup
+2026-09-28 23:41:47 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:41:47 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] prepared 50 records in 0.5s
+2026-09-28 23:41:55 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] submission phase 1.0s, busy 3.5s
+2026-09-28 23:41:56 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t0_large_quick] committed 50/50 | 16.0 tps | latency median 1.191s p95 2.616s | verify 1.0
+2026-09-28 23:41:56 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] setup
+2026-09-28 23:41:59 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] gas estimate recordEvidence = 154482
+2026-09-28 23:41:59 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] prepared 50 records in 0.7s
+2026-09-28 23:47:05 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] submission phase 0.9s, busy 301.4s
+2026-09-28 23:47:06 [E3_purechain_momtsim_n50_L4_d1048576_r50_s1_t1_large_quick] committed 49/50 | 21.5 tps | latency median 1.223s p95 1.573s | verify 1.0
+2026-09-28 23:47:06 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] setup
+2026-09-28 23:47:09 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:47:10 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] prepared 50 records in 2.2s
+2026-09-28 23:47:17 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] submission phase 0.9s, busy 2.4s
+2026-09-28 23:47:18 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t0_xlarge_quick] committed 50/50 | 23.8 tps | latency median 0.398s p95 1.384s | verify 1.0
+2026-09-28 23:47:18 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] setup
+2026-09-28 23:47:22 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:47:22 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] prepared 50 records in 2.4s
+2026-09-28 23:47:29 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] submission phase 0.9s, busy 2.4s
+2026-09-28 23:47:29 [E3_purechain_momtsim_n50_L4_d5242880_r50_s1_t1_xlarge_quick] committed 50/50 | 24.7 tps | latency median 1.336s p95 1.685s | verify 1.0
+2026-09-28 23:47:29 == E4: 24 trials (scale=quick)
+2026-09-28 23:47:30 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:47:30 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:47:31 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t0_quick] prepared 50 records in 0.1s
+2026-09-28 23:47:33 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 1.8s
+2026-09-28 23:47:33 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t0_quick] committed 50/50 | 34.5 tps | latency median 0.679s p95 1.138s | verify 1.0
+2026-09-28 23:47:33 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:47:34 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:47:34 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t1_quick] prepared 50 records in 0.1s
+2026-09-28 23:47:37 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.2s
+2026-09-28 23:47:37 [E4_besu_momtsim_n50_L1_d102400_r50_s1_t1_quick] committed 50/50 | 27.1 tps | latency median 0.508s p95 1.056s | verify 1.0
+2026-09-28 23:47:37 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:47:38 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:47:38 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:47:41 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 2.2s
+2026-09-28 23:47:41 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t0_quick] committed 50/50 | 26.9 tps | latency median 0.635s p95 1.064s | verify 1.0
+2026-09-28 23:47:41 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:47:42 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:47:42 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:47:45 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.2s
+2026-09-28 23:47:45 [E4_besu_momtsim_n50_L2_d102400_r50_s1_t1_quick] committed 50/50 | 28.5 tps | latency median 0.592s p95 1.098s | verify 1.0
+2026-09-28 23:47:45 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:47:46 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:47:46 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:47:49 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:47:49 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t0_quick] committed 50/50 | 27.3 tps | latency median 0.723s p95 1.077s | verify 1.0
+2026-09-28 23:47:49 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:47:50 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:47:50 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:47:53 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:47:53 [E4_besu_momtsim_n50_L3_d102400_r50_s1_t1_quick] committed 50/50 | 29.0 tps | latency median 0.588s p95 1.018s | verify 1.0
+2026-09-28 23:47:53 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:47:54 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:47:54 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:47:57 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:47:57 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t0_quick] committed 50/50 | 27.9 tps | latency median 0.759s p95 1.042s | verify 1.0
+2026-09-28 23:47:57 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:47:58 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:47:58 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:48:01 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:48:01 [E4_besu_momtsim_n50_L4_d102400_r50_s1_t1_quick] committed 50/50 | 28.6 tps | latency median 0.603s p95 1.103s | verify 1.0
+2026-09-28 23:48:01 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:48:02 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t0_quick] prepared 50 records in 0.0s
+2026-09-28 23:48:03 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:03 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t0_quick] committed 50/50 | 56.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:48:03 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:48:04 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t1_quick] prepared 50 records in 0.0s
+2026-09-28 23:48:05 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:05 [E4_db_postgres_momtsim_n50_L1_d102400_r50_s1_t1_quick] committed 50/50 | 55.1 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:48:05 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:48:06 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:48:08 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:08 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t0_quick] committed 50/50 | 56.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:48:08 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:48:08 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:48:10 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:10 [E4_db_postgres_momtsim_n50_L2_d102400_r50_s1_t1_quick] committed 50/50 | 55.1 tps | latency median 0.003s p95 0.005s | verify 1.0
+2026-09-28 23:48:10 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:48:11 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:48:13 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:13 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t0_quick] committed 50/50 | 56.6 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:48:13 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:48:13 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:48:15 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:15 [E4_db_postgres_momtsim_n50_L3_d102400_r50_s1_t1_quick] committed 50/50 | 55.0 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:48:15 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:48:16 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:48:17 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:18 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t0_quick] committed 50/50 | 56.4 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:48:18 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:48:18 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_quick] prepared 50 records in 0.2s
+2026-09-28 23:48:20 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 1.1s
+2026-09-28 23:48:20 [E4_db_postgres_momtsim_n50_L4_d102400_r50_s1_t1_quick] committed 50/50 | 55.1 tps | latency median 0.004s p95 0.005s | verify 1.0
+2026-09-28 23:48:20 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:48:22 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154502
+2026-09-28 23:48:22 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t0_quick] prepared 50 records in 0.1s
+2026-09-28 23:48:29 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 2.8s
+2026-09-28 23:48:30 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t0_quick] committed 50/50 | 20.1 tps | latency median 1.025s p95 1.712s | verify 1.0
+2026-09-28 23:48:30 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:48:32 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:48:32 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t1_quick] prepared 50 records in 0.1s
+2026-09-28 23:48:38 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:48:39 [E4_purechain_momtsim_n50_L1_d102400_r50_s1_t1_quick] committed 50/50 | 28.1 tps | latency median 1.121s p95 1.465s | verify 1.0
+2026-09-28 23:48:39 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:48:41 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154482
+2026-09-28 23:48:41 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t0_quick] prepared 50 records in 0.3s
+2026-09-28 23:48:48 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 2.5s
+2026-09-28 23:48:49 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t0_quick] committed 50/50 | 22.7 tps | latency median 1.113s p95 1.446s | verify 1.0
+2026-09-28 23:48:49 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:48:51 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:48:51 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:48:57 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:48:58 [E4_purechain_momtsim_n50_L2_d102400_r50_s1_t1_quick] committed 50/50 | 27.9 tps | latency median 1.211s p95 1.613s | verify 1.0
+2026-09-28 23:48:58 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:49:00 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:49:00 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t0_quick] prepared 50 records in 0.3s
+2026-09-28 23:49:07 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t0_quick] submission phase 1.0s, busy 2.4s
+2026-09-28 23:49:08 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t0_quick] committed 50/50 | 24.6 tps | latency median 1.091s p95 1.344s | verify 1.0
+2026-09-28 23:49:08 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:49:10 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:49:10 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:49:17 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.6s
+2026-09-28 23:49:18 [E4_purechain_momtsim_n50_L3_d102400_r50_s1_t1_quick] committed 49/50 | 32.0 tps | latency median 0.996s p95 1.379s | verify 1.0
+2026-09-28 23:49:18 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:49:20 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154502
+2026-09-28 23:49:20 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:49:26 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 2.1s
+2026-09-28 23:49:27 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] committed 50/50 | 29.1 tps | latency median 1.012s p95 1.483s | verify 1.0
+2026-09-28 23:49:27 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:49:29 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:49:29 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] prepared 50 records in 0.3s
+2026-09-28 23:49:36 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.3s
+2026-09-28 23:49:37 [E4_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] committed 50/50 | 25.3 tps | latency median 1.151s p95 1.497s | verify 1.0
+2026-09-28 23:49:37 == E5: 12 trials (scale=quick)
+2026-09-28 23:49:37 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v4_quick] setup
+2026-09-28 23:49:38 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v4_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:49:38 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v4_quick] prepared 50 records in 0.2s
+2026-09-28 23:49:41 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v4_quick] submission phase 0.9s, busy 2.0s
+2026-09-28 23:49:41 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v4_quick] committed 50/50 | 29.6 tps | latency median 0.633s p95 1.001s | verify 1.0
+2026-09-28 23:49:41 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v4_quick] setup
+2026-09-28 23:49:42 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v4_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:49:42 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v4_quick] prepared 50 records in 0.3s
+2026-09-28 23:49:45 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v4_quick] submission phase 0.9s, busy 2.0s
+2026-09-28 23:49:45 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v4_quick] committed 50/50 | 30.3 tps | latency median 0.756s p95 1.115s | verify 1.0
+2026-09-28 23:49:45 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v4_quick] setup
+2026-09-28 23:49:46 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v4_quick] gas estimate recordEvidence = 153291
+2026-09-28 23:49:46 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v4_quick] prepared 50 records in 0.2s
+2026-09-28 23:49:48 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v4_quick] submission phase 0.2s, busy 1.2s
+2026-09-28 23:49:48 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v4_quick] committed 50/50 | 55.2 tps | latency median 0.792s p95 0.894s | verify 1.0
+2026-09-28 23:49:48 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v4_quick] setup
+2026-09-28 23:49:49 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v4_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:49:49 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v4_quick] prepared 50 records in 0.3s
+2026-09-28 23:49:52 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v4_quick] submission phase 0.2s, busy 1.9s
+2026-09-28 23:49:52 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v4_quick] committed 50/50 | 31.9 tps | latency median 0.558s p95 0.668s | verify 1.0
+2026-09-28 14:49:55.452+00:00 | main | INFO  | GenerateBlockchainConfig | Generating 7 nodes keys.
+2026-09-28 14:49:55.455+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 0.
+2026-09-28 14:49:55.504+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 1.
+2026-09-28 14:49:55.511+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 2.
+2026-09-28 14:49:55.520+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 3.
+2026-09-28 14:49:55.528+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 4.
+2026-09-28 14:49:55.536+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 5.
+2026-09-28 14:49:55.543+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 6.
+2026-09-28 14:49:55.551+00:00 | main | INFO  | GenerateBlockchainConfig | Generating QBFT extra data.
+2026-09-28 14:49:55.554+00:00 | main | INFO  | GenerateBlockchainConfig | Writing genesis file.
+2026-09-28 23:50:31 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v7_quick] setup
+2026-09-28 23:50:35 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v7_quick] gas estimate recordEvidence = 170391
+2026-09-28 23:50:36 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v7_quick] prepared 50 records in 0.3s
+2026-09-28 23:50:39 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v7_quick] submission phase 0.9s, busy 3.1s
+2026-09-28 23:50:40 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v7_quick] committed 50/50 | 19.5 tps | latency median 1.666s p95 1.820s | verify 1.0
+2026-09-28 23:50:40 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v7_quick] setup
+2026-09-28 23:50:41 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v7_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:50:41 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v7_quick] prepared 50 records in 0.4s
+2026-09-28 23:50:45 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v7_quick] submission phase 1.0s, busy 3.3s
+2026-09-28 23:50:45 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v7_quick] committed 50/50 | 18.3 tps | latency median 1.993s p95 2.368s | verify 1.0
+2026-09-28 23:50:45 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v7_quick] setup
+2026-09-28 23:50:47 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v7_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:50:47 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v7_quick] prepared 50 records in 0.2s
+2026-09-28 23:50:50 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v7_quick] submission phase 0.4s, busy 2.5s
+2026-09-28 23:50:50 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v7_quick] committed 50/50 | 27.3 tps | latency median 1.645s p95 1.771s | verify 1.0
+2026-09-28 23:50:50 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v7_quick] setup
+2026-09-28 23:50:52 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v7_quick] gas estimate recordEvidence = 153323
+2026-09-28 23:50:52 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v7_quick] prepared 50 records in 0.3s
+2026-09-28 23:50:55 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v7_quick] submission phase 0.4s, busy 2.5s
+2026-09-28 23:50:55 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v7_quick] committed 50/50 | 25.4 tps | latency median 1.833s p95 1.932s | verify 1.0
+2026-09-28 14:51:00.093+00:00 | main | INFO  | GenerateBlockchainConfig | Generating 10 nodes keys.
+2026-09-28 14:51:00.104+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 0.
+2026-09-28 14:51:00.167+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 1.
+2026-09-28 14:51:00.177+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 2.
+2026-09-28 14:51:00.190+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 3.
+2026-09-28 14:51:00.200+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 4.
+2026-09-28 14:51:00.210+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 5.
+2026-09-28 14:51:00.219+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 6.
+2026-09-28 14:51:00.229+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 7.
+2026-09-28 14:51:00.237+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 8.
+2026-09-28 14:51:00.244+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 9.
+2026-09-28 14:51:00.253+00:00 | main | INFO  | GenerateBlockchainConfig | Generating QBFT extra data.
+2026-09-28 14:51:00.256+00:00 | main | INFO  | GenerateBlockchainConfig | Writing genesis file.
+2026-09-28 23:51:58 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v10_quick] setup
+2026-09-28 23:52:04 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v10_quick] gas estimate recordEvidence = 170435
+2026-09-28 23:52:04 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v10_quick] prepared 50 records in 0.4s
+2026-09-28 23:52:08 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v10_quick] submission phase 0.9s, busy 4.0s
+2026-09-28 23:52:09 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t0_v10_quick] committed 50/50 | 16.2 tps | latency median 2.056s p95 2.359s | verify 1.0
+2026-09-28 23:52:09 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v10_quick] setup
+2026-09-28 23:52:11 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v10_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:52:11 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v10_quick] prepared 50 records in 0.5s
+2026-09-28 23:52:16 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v10_quick] submission phase 1.0s, busy 4.2s
+2026-09-28 23:52:17 [E5_besu_momtsim_n50_L4_d10240_r50_s1_t1_v10_quick] committed 50/50 | 14.4 tps | latency median 2.702s p95 3.036s | verify 1.0
+2026-09-28 23:52:17 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v10_quick] setup
+2026-09-28 23:52:18 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v10_quick] gas estimate recordEvidence = 153335
+2026-09-28 23:52:18 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v10_quick] prepared 50 records in 0.3s
+2026-09-28 23:52:22 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v10_quick] submission phase 0.3s, busy 3.8s
+2026-09-28 23:52:23 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t0_v10_quick] committed 50/50 | 17.1 tps | latency median 2.802s p95 2.900s | verify 1.0
+2026-09-28 23:52:23 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v10_quick] setup
+2026-09-28 23:52:24 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v10_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:52:25 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v10_quick] prepared 50 records in 0.4s
+2026-09-28 23:52:32 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v10_quick] submission phase 0.5s, busy 7.0s
+2026-09-28 23:52:32 [E5_besu_momtsim_n50_L4_d10240_r200_s1_t1_v10_quick] committed 50/50 | 7.6 tps | latency median 6.342s p95 6.501s | verify 1.0
+2026-09-28 23:52:32 == E6: 6 trials (scale=quick)
+2026-09-28 23:52:32 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:52:35 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:52:35 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] prepared 50 records in 0.2s
+2026-09-28 23:52:41 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 2.0s
+2026-09-28 23:52:42 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] committed 50/50 | 34.6 tps | latency median 0.991s p95 1.400s | verify 1.0
+2026-09-28 23:52:44 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t0_quick] tamper: 550 modifications, TDR=100.00% | benign FPR=0.00% | control ok=1.000 | 1.1s
+2026-09-28 23:52:44 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:52:46 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:52:46 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] prepared 50 records in 0.4s
+2026-09-28 23:52:53 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.7s
+2026-09-28 23:52:54 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] committed 50/50 | 21.5 tps | latency median 0.954s p95 1.443s | verify 1.0
+2026-09-28 23:52:55 [E6_purechain_momtsim_n50_L4_d102400_r50_s1_t1_quick] tamper: 550 modifications, TDR=100.00% | benign FPR=0.00% | control ok=1.000 | 1.3s
+2026-09-28 23:52:55 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:52:58 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:52:58 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t0_quick] prepared 50 records in 0.4s
+2026-09-28 23:53:07 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t0_quick] submission phase 0.9s, busy 3.4s
+2026-09-28 23:53:07 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t0_quick] committed 50/50 | 16.4 tps | latency median 1.043s p95 1.515s | verify 1.0
+2026-09-28 23:53:09 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t0_quick] tamper: 550 modifications, TDR=100.00% | benign FPR=0.00% | control ok=1.000 | 0.9s
+2026-09-28 23:53:09 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:53:11 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:53:11 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t1_quick] prepared 50 records in 0.4s
+2026-09-28 23:53:19 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.6s
+2026-09-28 23:53:20 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t1_quick] committed 50/50 | 22.5 tps | latency median 0.975s p95 1.410s | verify 1.0
+2026-09-28 23:53:21 [E6_purechain_saml_d_n50_L4_d102400_r50_s1_t1_quick] tamper: 550 modifications, TDR=100.00% | benign FPR=0.00% | control ok=1.000 | 1.4s
+2026-09-28 23:53:21 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t0_quick] setup
+2026-09-28 23:53:24 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t0_quick] gas estimate recordEvidence = 154482
+2026-09-28 23:53:24 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t0_quick] prepared 50 records in 0.7s
+2026-09-28 23:53:32 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t0_quick] submission phase 1.0s, busy 2.8s
+2026-09-28 23:53:33 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t0_quick] committed 50/50 | 20.6 tps | latency median 1.385s p95 1.809s | verify 1.0
+2026-09-28 23:53:34 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t0_quick] tamper: 550 modifications, TDR=100.00% | benign FPR=0.00% | control ok=1.000 | 1.1s
+2026-09-28 23:53:34 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t1_quick] setup
+2026-09-28 23:53:36 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t1_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:53:36 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t1_quick] prepared 50 records in 0.2s
+2026-09-28 23:53:43 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t1_quick] submission phase 0.9s, busy 2.6s
+2026-09-28 23:53:44 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t1_quick] committed 50/50 | 21.9 tps | latency median 1.353s p95 1.731s | verify 1.0
+2026-09-28 23:53:45 [E6_purechain_ibm_aml_n50_L4_d102400_r50_s1_t1_quick] tamper: 550 modifications, TDR=100.00% | benign FPR=0.00% | control ok=1.000 | 1.2s
+2026-09-28 23:53:45 == E7: 12 trials (scale=quick)
+2026-09-28 14:53:50.043+00:00 | main | INFO  | GenerateBlockchainConfig | Generating 4 nodes keys.
+2026-09-28 14:53:50.046+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 0.
+2026-09-28 14:53:50.099+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 1.
+2026-09-28 14:53:50.107+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 2.
+2026-09-28 14:53:50.116+00:00 | main | INFO  | GenerateBlockchainConfig | Generating keypair for node 3.
+2026-09-28 14:53:50.125+00:00 | main | INFO  | GenerateBlockchainConfig | Generating QBFT extra data.
+2026-09-28 14:53:50.128+00:00 | main | INFO  | GenerateBlockchainConfig | Writing genesis file.
+2026-09-28 23:54:15 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:54:19 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 170435
+2026-09-28 23:54:19 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.4s
+2026-09-28 23:54:23 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 3.6s
+2026-09-28 23:54:24 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 32.5 tps | latency median 1.380s p95 1.785s | verify 1.0
+2026-09-28 23:54:24 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:54:25 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:54:26 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 0.4s
+2026-09-28 23:54:30 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.2s, busy 3.7s
+2026-09-28 23:54:30 [E7_besu_saml_d_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 30.2 tps | latency median 1.120s p95 1.674s | verify 1.0
+2026-09-28 23:54:30 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:54:32 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 153315
+2026-09-28 23:54:32 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 1.0s
+2026-09-28 23:54:36 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 3.3s
+2026-09-28 23:54:36 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 34.8 tps | latency median 0.983s p95 1.329s | verify 1.0
+2026-09-28 23:54:36 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:54:46 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 153303
+2026-09-28 23:54:46 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 8.7s
+2026-09-28 23:54:50 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.2s, busy 3.5s
+2026-09-28 23:54:50 [E7_besu_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 32.4 tps | latency median 0.919s p95 1.362s | verify 1.0
+2026-09-28 23:54:50 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:54:51 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.4s
+2026-09-28 23:54:54 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 2.1s
+2026-09-28 23:54:54 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 52.5 tps | latency median 0.004s p95 0.012s | verify 1.0
+2026-09-28 23:54:54 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:54:55 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 0.3s
+2026-09-28 23:54:58 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.2s, busy 2.4s
+2026-09-28 23:54:58 [E7_db_postgres_saml_d_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 45.5 tps | latency median 0.004s p95 0.007s | verify 1.0
+2026-09-28 23:54:59 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:55:00 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.9s
+2026-09-28 23:55:03 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 2.1s
+2026-09-28 23:55:03 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 51.6 tps | latency median 0.004s p95 0.007s | verify 1.0
+2026-09-28 23:55:03 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:55:07 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 3.6s
+2026-09-28 23:55:10 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.2s, busy 2.4s
+2026-09-28 23:55:10 [E7_db_postgres_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 45.5 tps | latency median 0.004s p95 0.006s | verify 1.0
+2026-09-28 23:55:10 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:55:12 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 154494
+2026-09-28 23:55:12 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.3s
+2026-09-28 23:55:20 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t0_quick] submission phase 1.9s, busy 3.0s
+2026-09-28 23:55:21 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 39.2 tps | latency median 1.362s p95 2.168s | verify 1.0
+2026-09-28 23:55:21 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:55:23 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 154514
+2026-09-28 23:55:23 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 0.4s
+2026-09-28 23:55:32 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.2s, busy 4.4s
+2026-09-28 23:55:33 [E7_purechain_saml_d_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 26.2 tps | latency median 1.933s p95 2.524s | verify 1.0
+2026-09-28 23:55:33 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] setup
+2026-09-28 23:55:35 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] gas estimate recordEvidence = 154526
+2026-09-28 23:55:35 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] prepared 100 records in 0.9s
+2026-09-28 23:55:44 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] submission phase 2.0s, busy 4.2s
+2026-09-28 23:55:45 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t0_quick] committed 100/100 | 26.3 tps | latency median 1.167s p95 1.733s | verify 1.0
+2026-09-28 23:55:45 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] setup
+2026-09-28 23:55:50 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] gas estimate recordEvidence = 154506
+2026-09-28 23:55:50 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] prepared 100 records in 3.6s
+2026-09-28 23:55:59 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] submission phase 2.3s, busy 4.3s
+2026-09-28 23:56:00 [E7_purechain_ibm_aml_n100_L4_d10240_r50_s1_t1_quick] committed 100/100 | 25.5 tps | latency median 1.635s p95 2.116s | verify 1.0

@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Efficiency metrics (MoMTSim workloads): CPU in cores used on average during the processing window, peak infrastructure memory, network I/O, storage overhead per record, energy and operational cost. n/m: not measurable (remote validators).}
+\label{tab:efficiency}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Workload & Infrastructure & CPU client & CPU infra & Mem (MB) & Net (KB/rec) & On-chain (B/rec) & Off-chain (KB/rec) & E attr. (J) & E dyn. (J) & \textmu USD/rec \\
+\midrule
+W1 & Besu QBFT & 0.12 & 2.48 & 3,140 & 9.97 & 397 & 12.3 & 2.226 & 0.3125 & 36.01 \\
+W1 & PostgreSQL & 0.05 & 0.02 & 80 & 0.90 & 182 & 12.3 & 0.510 & 0.0076 & 25.69 \\
+W1 & Ethereum PoS & 0.04 & 0.30 & 835 & 47.99 & 402 & 12.3 & 6.814 & 0.1261 & 2,300,681 \\
+W1 & PoA\textsuperscript{2} emulation & 0.10 & 0.30 & 1,207 & 10.43 & 398 & 12.3 & 2.188 & 0.0466 & 36.09 \\
+W2 & Besu QBFT & 0.12 & 2.65 & 5,209 & 8.42 & 397 & 12.3 & 2.025 & 0.3016 & 35.87 \\
+W2 & PostgreSQL & 0.05 & 0.02 & 87 & 0.94 & 182 & 12.3 & 0.505 & 0.0077 & 25.69 \\
+W2 & Ethereum PoS & 0.06 & 0.45 & 1,012 & 56.65 & 402 & 12.3 & 6.249 & 0.1708 & 2,300,688 \\
+W2 & PoA\textsuperscript{2} emulation & 0.10 & 0.36 & 2,726 & 8.69 & 398 & 12.3 & 2.026 & 0.0500 & 35.93 \\
+W5 & Besu QBFT & 0.12 & 2.76 & 5,217 & 8.45 & 397 & 1,026 & 2.030 & 0.3151 & 2,042 \\
+W5 & PostgreSQL & 0.05 & 0.02 & 105 & 0.94 & 182 & 1,026 & 0.506 & 0.0081 & 2,032 \\
+W5 & PoA\textsuperscript{2} emulation & 0.10 & 0.36 & 2,597 & 8.68 & 398 & 1,026 & 2.026 & 0.0508 & 2,042 \\
+\bottomrule
+\end{tabular}}
+\end{table}

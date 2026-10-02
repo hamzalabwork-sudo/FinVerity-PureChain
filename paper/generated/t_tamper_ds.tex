@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Tamper detection by dataset and infrastructure (E6).}
+\label{tab:tamperds}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Infrastructure & Malicious & TDR (\%) & TDR 95\% lower & Benign & FPR (\%) & FPR 95\% upper \\
+\midrule
+IBM AML & PoA\textsuperscript{2} emulation & 33,000 & 100.00 & 99.989 & 6,000 & 0.00 & 0.061 \\
+MoMTSim & PoA\textsuperscript{2} emulation & 33,000 & 100.00 & 99.989 & 6,000 & 0.00 & 0.061 \\
+MoMTSim & PureChain (live) & 33,000 & 100.00 & 99.989 & 6,000 & 0.00 & 0.061 \\
+SAML-D & PoA\textsuperscript{2} emulation & 33,000 & 100.00 & 99.989 & 6,000 & 0.00 & 0.061 \\
+SAML-D & PureChain (live) & 11,000 & 100.00 & 99.966 & 2,000 & 0.00 & 0.184 \\
+\bottomrule
+\end{tabular}}
+\end{table}
